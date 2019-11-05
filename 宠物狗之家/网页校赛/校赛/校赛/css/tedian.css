@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+html, body{
+	background:#fff;
+	margin:0;
+	padding: 0;
+	width: 100%;
+}
+h2,h3,h4,p{
+	padding: 0;
+	margin: 0;
+}
+.line-up{
+	width: 1200px;
+	height: 400px;
+	margin:30px auto;
+	padding-top: 10px;
+}
+.line-up .line-text{
+	width:200px;
+	height:35px;
+	background: black;
+	border: 1px solid #F7F7F7;
+	margin:10px auto;
+}
+.line-up .line-text h2{
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 3px;
+	line-height: 30px;
+}
+.line-up .line-up-image{
+	width: 100%;
+	height: 350px;
+	margin-top: 5%;
+	margin-left: 1%;
+}
+.line-up .line-up-image .line-all{
+	float: left;
+	position: relative;
+    perspective: 1000px;
+}
+.line-up .line-up-image .line-all .line-up-dog{
+	transform: rotateY(0deg);
+    transition: all 0.80s ease-in-out 0s;
+	margin: 6px;
+	width: 280px;
+	height:260px;
+	background-color: RGBA(0, 0, 0, .7);
+	opacity:1;
+}
+.line-up .line-up-image .line-all:hover .line-up-dog{
+	 transform: rotateY(90deg);
+	  opacity:0;
+}
+.line-up .line-up-image .line-all .line-up-dog p{
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 25px;
+}
+.line-up .line-up-image .line-all .line-up-text{
+	width: 250px;
+    height:142px;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    padding: 60px 20px;
+    text-align: center;
+    background: rgba(0,0,0,0.7);
+    transform: rotateY(90deg);
+    opacity: 0;
+    transition: all 0.80s ease-in-out 0s;
+}
+.line-up .line-up-image .line-all:hover .line-up-text{
+	 transform: rotateY(0);
+	 opacity: 1;
+}
+.line-up .line-up-image .line-all .line-up-text p.dog-name{
+	font-size: 30px;
+	text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+	padding-bottom: 20px;
+	border-bottom: 1px solid white;
+	font-family: 微软雅黑;
+}
+.line-up .line-up-image .line-all .line-up-text p.country{
+	margin-top: 35px;
+	text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+	font-family: 微软雅黑;
+}

@@ -1,0 +1,89 @@
+﻿* {
+    box-sizing: border-box;
+}
+body{
+	background-color: #6E6E6E;
+}
+.h1 {
+    text-align: center;
+    font-size: 64px;
+    color: rgba(255,255,255,.9); /*.9为不透明度*/
+    margin: 50px auto;
+}
+.left {
+    margin-top: 10%;
+    text-align: center;
+    width: 20%;
+    float: left;
+}
+.right {
+	margin-top:20px;
+    width: 80%;
+    float: right;
+}
+.left2{
+    margin-top:15%;
+    margin-left:20%;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,.6);
+    background: rgba(0,0,0,.4);
+	box-shadow: 5px 5px 5px #333333;
+}
+body {
+    font-family: 微软雅黑;
+}
+
+#tedian {
+    float:right;
+    margin-top:10%;
+    margin-left: 30%;
+    border-left: 10px solid #bce1fa;
+}
+
+    #tedian li {
+        list-style: none;
+        display: block;
+        width: 100%;
+        clear: both;
+        position: relative;
+        margin-top:8%;
+    }
+
+        #tedian li::before {
+            content: '';
+            display: block;
+            border-radius: 50%;
+            background: #3498DB;
+            width: 30px;
+            height: 30px;
+            border: 5px solid #bce1fa;
+            position: absolute;
+            left: -25px;
+            top: 0;
+        }
+
+.tedian-content {
+    margin: 0 0 15% 5%;
+    background: #57b4f6;
+    color: #FFF;
+    padding: 30px;
+    border-radius: 4px;
+    position: relative;
+}
+
+    .tedian-content h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .tedian-content::after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent #57b4f6 transparent transparent;
+        position: absolute;
+        left: -20px;
+        top: 12px;
+    }

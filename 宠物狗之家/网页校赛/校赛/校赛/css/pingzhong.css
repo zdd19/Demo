@@ -1,0 +1,86 @@
+body {
+    font-family: 微软雅黑;
+    background-color: white;
+}
+
+#left-menu-nav {
+    float: left;
+    margin-top: 3%;
+    margin-left: 9%;
+    width: 12%;
+}
+
+    #left-menu-nav ul {
+        width: 150px;
+    }
+
+        #left-menu-nav ul li {
+            margin-top: 5%;
+            list-style: none;
+            width: 150px;
+            height: 60px;
+            text-align: center;
+            background-color: #5E5D5D;
+            border-bottom: 1px solid rgba(255,255,255,0.6);
+            border-radius: 30px;
+        }
+
+        #left-menu-nav ul a {
+            background-color: #5E5D5D;
+            line-height: 60px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            font-weight: 600;
+            font-family: 微软雅黑;
+        }
+
+            #left-menu-nav ul a li:hover {
+                background-color: #2D2D2D;
+                transition-duration: 1.5s;
+            }
+
+            #left-menu-nav ul a:hover {
+                color: red;
+            }
+
+#right {
+    margin-top: 3%;
+    width: 67%;
+    float: right;
+    margin-left: 3%;
+    margin-right: 9%;
+}
+
+    #right h1 {
+        font-size: 50px;
+        color: rgba(0,0,0,.7);
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(0,0,0,.4);
+    }
+
+    #right p {
+        text-indent: 2em;
+        font-size: 25px;
+        color: rgba(0,0,0,.7);
+        line-height: 1.4;
+        margin-bottom: 30px;
+    }
+
+.img-left {
+    float: left;
+    margin-right: 20px;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,.6);
+    background: rgba(0,0,0,.4);
+}
+
+.img-right {
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    float: right;
+    border: 1px solid rgba(0,0,0,.6);
+    background: rgba(0,0,0,.4);
+}

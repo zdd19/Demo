@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+	* {
+    	margin: 0;
+    	padding: 0;
+	  }
+		#menu{
+			background: #F6F6F6;
+			width:100%;
+			margin:0;
+			height:35px;
+		}
+		#menu ul{
+			margin: 0 auto;
+		}
+		#menu ul li{
+			list-style:none;
+			float: right;
+			width: 100px;
+			height: 35px;
+			text-decoration: none;
+			text-align: center;
+		}
+		#menu ul li:hover{
+			background:#068704;
+			transition-duration: 1s;
+		}
+		#menu ul li a{
+			line-height: 35px;
+			text-decoration: none;
+			font-size:20px;
+			color:black;
+			font-weight:600;
+			font-family:微软雅黑;
+			}
+		#menu ul li a:hover{
+			color: white;
+			transition-duration: 1s;
+		}
+		#logo{
+			margin-left: 10%;
+			float: left;
+		} 

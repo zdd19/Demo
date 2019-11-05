@@ -1,0 +1,49 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 微软雅黑;
+    background-color: white;
+}
+#left-menu{
+    margin-bottom:8%;
+}
+#left-menu-nav {
+    margin-left: 5%;
+    width: 100%;
+}
+
+    #left-menu-nav ul {
+        margin: 0 auto;
+    }
+
+        #left-menu-nav ul li {
+            float: left;
+            margin-top: 5%;
+            list-style: none;
+            width: 150px;
+            height: 60px;
+            text-align: center;
+            background-color: #5E5D5D;
+            border-bottom: 1px solid rgba(0,0,0,0.6);
+            border-radius: 30px;
+        }
+
+        #left-menu-nav ul a {
+            background-color: #5E5D5D;
+            line-height: 60px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            font-weight: 600;
+            font-family: 微软雅黑;
+        }
+
+            #left-menu-nav ul a li:hover {
+                background-color:#2D2D2D;
+                transition-duration: 1.5s;
+            }
+
+            #left-menu-nav ul a:hover {
+                color: red;
+            }

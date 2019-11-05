@@ -1,0 +1,181 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .test {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .box {
+            height: 40%;
+            width: 40%;
+            background: yellow;
+            margin: 3%;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            transition: 1s;
+        }
+        .box:first-child{
+            transform: translateX(-200px);
+        }
+        .box:nth-child(2){
+            transform: translateX(200px);
+        }
+        .box:nth-child(3){
+            transform: translateX(-200px);
+        }
+        .box:nth-child(4){
+            transform: translateX(200px);
+        }
+        .box.show{
+            transform: translateX(0);
+            opacity: 1;
+        }
+        .box img{
+            transition: 1s;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .box:hover img{
+            transform: scale(1.1);
+        }
+        .box:hover .box-content {
+            top: 0;
+        }
+
+        .box-content {
+            transition: all 1s ease-in-out;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .box-content span {
+            transition: all 1s;
+            position: absolute;
+            opacity: 0;
+        }
+
+        .box-content span.show {
+            opacity: 1;
+        }
+        .test2{
+            width: 100%;
+            height: 100vh;
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="test">
+        <div class="box">
+            <img src="../image/test1.jpg">
+            <div class="box-content">
+                <span class="box-content-span">if you smile to world,the world will smile to you</span>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../image/test2.jpg">
+            <div class="box-content">
+                <span class="box-content-span">if you smile to world,the world will smile to you</span>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../image/test3.jpg">
+            <div class="box-content">
+                <span class="box-content-span">if you smile to world,the world will smile to you</span>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../image/test4.jpg">
+            <div class="box-content">
+                <span class="box-content-span">if you smile to world,the world will smile to you</span>
+            </div>
+        </div>
+    </div>
+    <div class="test2"></div>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(".test").eq(0).click(function () {
+            console.log("111");
+        })
+        $(document).ready(function () {
+            $('.box').eq(0).addClass('show');
+            $('.box').eq(1).addClass('show');
+            setTimeout(function(){
+                $('.box').eq(2).addClass('show');
+                $('.box').eq(3).addClass('show');
+            },400)
+            $('.box').eq(0).mouseover(function () {
+                setTimeout(function () {
+                    $(".box-content-span").eq(0).addClass("show");
+                }, 800)
+            })
+            $('.box').eq(0).mouseout(function () {
+                setTimeout(function(){
+                    $(".box-content-span").eq(0).removeClass("show");
+                },800)
+            })
+            $('.box').eq(1).mouseover(function () {
+                setTimeout(function () {
+                    $(".box-content-span").eq(1).addClass("show");
+                }, 800)
+            })
+            $('.box').eq(1).mouseout(function () {
+                setTimeout(function(){
+                    $(".box-content-span").eq(0).removeClass("show");
+                },800)
+            })
+            $('.box').eq(2).mouseover(function () {
+                setTimeout(function () {
+                    $(".box-content-span").eq(2).addClass("show");
+                }, 800)
+            })
+            $('.box').eq(2).mouseout(function () {
+                setTimeout(function(){
+                    $(".box-content-span").eq(0).removeClass("show");
+                },800)
+            })
+            $('.box').eq(3).mouseover(function () {
+                setTimeout(function () {
+                    $(".box-content-span").eq(3).addClass("show");
+                }, 800)
+            })
+            $('.box').eq(3).mouseout(function () {
+                setTimeout(function(){
+                    $(".box-content-span").eq(0).removeClass("show");
+                },800)
+            })
+        })
+    </script>
+</body>
+
+</html>

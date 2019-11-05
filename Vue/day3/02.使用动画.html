@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        /* v-enter是动画起始的时间点，此时还没有开始进入 */
+        /* v-leave-to是动画结束的时间点，是动画离开之后的终止状态 */
+        .v-enter,.v-leave-to{
+            opacity: 0;
+            transform: translateX(80px);
+        }
+        /* v-enter-avtive入场动画时间段*/
+        /*v-leave-active离场动画时间段 */
+        .v-enter-active,.v-leave-active{
+            transition: all .4s ease;
+        }
+    </style>
+    <script src="../lib/vue.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <input type="button" value="切换" @click="flag=!flag">
+        <!-- 使用transition元素，把需要被控制的动画元素包裹进来 -->
+        <!-- transition是Vue官方提供的 -->
+        <transition>
+            <h3 v-if="flag">这是一个H3</h3>
+        </transition>
+        
+    </div>
+    <script>
+        var vm=new Vue({
+            el:"#app",
+            data:{
+                flag:false
+            },
+            methods:{
+
+            }
+        });
+    </script>
+</body>
+</html>

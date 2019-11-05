@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../lib/vue.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- 父组件向子组件传递的方法使用的是事件绑定机制v-on： -->
+        <com1 v-on:func123="show"></com1>
+    </div>
+
+    <template id="tmp1">
+        <div>
+            <h1>这是子组件</h1>
+            <input type="button" value="传递" @click="myclick">
+        </div>
+    </template>
+    <script>
+        var com1={
+            template:'#tmp1',
+            data(){
+                return{
+                    sonmsg:{name:'小偷儿子',age:'6' }
+                }
+            },
+            methods:{
+                myclick(){
+                    this.$emit('func123',this.sonmsg)
+                }
+            }
+        }
+
+        var vm=new Vue({
+            el:'#app',
+            data:{
+                datamsgFromSon:null
+            },
+            methods:{
+                show(data){
+                    console.log('调用了父组件的方法'+data.name);
+                    this.datamsgFromSon=data;
+                    console.log(this.datamsgFromSon.age)
+                }
+            },
+            components:{
+                com1,
+            }
+        })
+    </script>
+</body>
+</html>

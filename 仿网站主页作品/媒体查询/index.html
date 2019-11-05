@@ -1,0 +1,842 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    
+        @media only screen and (max-width:558px) {
+            #head {
+                background-color: #333333;
+                width: 100%;
+                height: 70px;
+            }
+    
+            .head-wrap {
+                padding: 20px 40px;
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+            }
+    
+            .head-logo {
+                width: 100%;
+                height: 70px;
+            }
+    
+            .head-logo img {
+                padding-right: 180px;
+                float: right;
+                height: auto;
+            }
+    
+            .head-title ul {
+                width: 500px;
+                height: 49px;
+                display: flex;
+                flex-wrap: wrap;
+                display: none;
+            }
+    
+            .head-title ul li {
+                list-style: none;
+                width: 52px;
+                margin-left: 12.5px;
+                margin-right: 12.5px;
+            }
+    
+            .head-title ul li a {
+                text-decoration: none;
+                color: white;
+            }
+    
+            .main-video {
+                width: 100%;
+                height: 70%;
+            }
+    
+            video {
+                width: 100%;
+                height: 70%;
+                position: absolute;
+                object-fit: fill;
+                z-index: -9999;
+            }
+            .right{
+                float: right;
+                margin-top: 60px;
+                padding-right:80px;
+            }
+            .top1{
+                display: none;
+            }
+            .main-right-top {
+                text-align: center;
+                color: white;
+                font-size: 40px;
+            }
+    
+            .main-right-middle {
+                text-align: center;
+                color: white;
+                font-size: 20px;
+                margin-top: 20px;
+            }
+            .main-right-middle p{
+                margin-bottom: 10px;
+            }
+    
+            .main-right-bottom {
+                width: 300px;
+                height: 70px;
+                border: 1px solid rgb(54,133,190);
+                background-color:rgb(54,133,190);
+                border-radius: 5px;
+                text-align: center;
+                transition: all .5s;
+                margin-top: 60px;
+                margin-left: 40px;
+            }
+    
+            .main-right-bottom a {
+                color: white;
+                font-size: 20px;
+                text-decoration: none;
+                margin: 0 auto;
+                line-height: 70px;
+            }
+    
+            .main-right-bottom:hover {
+                background-color:rgb(0,100,143);
+            }
+            .clear{
+                clear: both;
+            }
+            .text{
+                margin-top: 60px;
+                text-align: center;
+            }
+            .more{
+                margin-bottom: 20px;
+            }
+            .more-text1{
+                font-size: 40px;
+                color: #333333;          
+            }
+            .more-text2{
+                margin-top: 20px;
+                font-size: 10px;
+                color: #333333;
+            }
+            .computer{
+                width: 100%;
+            }
+            .video2-1{
+                padding-left:120px;
+                padding-top: 30px;
+                width: 77%;
+                height: 60%;
+            }
+            .video2{
+                width: 100%;              
+            }
+            .media{
+                width: 100%;
+            }
+            .video2-1{
+                display: none;
+            }
+            .main-class3-1{
+               background-color: #f9f9f9;
+            }
+            .main-class3-1-all{
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+            .main-class3-1-picture{
+                width: 100%;
+            }
+            .main-class3-1-picture img{
+                width: 100%;
+            }
+            .main-class3-1-alltext{
+                padding-left: 80px;
+                margin: 30 auto;
+                width: 60%;
+                padding-right: 80px;
+            }
+            .main-class3-1-title{
+                text-align: center;
+                width:100%;
+                font-size: 4vw;
+                font-weight: normal;
+                font-style: normal;
+                color: #333333;
+                margin-bottom: 20px;
+            }
+            .main-class3-1-text{
+                font-weight: normal;
+                font-style: normal;
+                font-size: 1.75vw;
+                width:100%;
+                color: #333333;
+                line-height: 30px;
+            }
+            .main-class4-alltext{
+                padding-top: 100px;
+                margin: 15 auto;
+                width: 100%;             
+                text-align: center;
+            }
+            .main-class4-title{
+                width:100%;
+                font-size: 5vw;
+                font-weight: normal;
+                font-style: normal;
+                color: #333333;
+                margin-bottom: 20px;
+            }
+            .main-class4-text{
+                margin-top: 30px;
+                font-size: 3vw;
+                width:100%;
+                color: #333333;
+                line-height: 30px;
+            }
+            .main-class4-text span{
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .main-class4-line1{
+                max-width: 900px;
+                margin: 0 auto;
+            }
+            .main-class4-line1-box{
+                border: 1px solid #333333;
+                width: 90%;
+                height:160px;
+                padding-top: 15px;
+                margin-left: 30px;
+                margin-right: 15px;
+                margin-top: 7.5px;
+                margin-bottom: 7.5px;
+            }
+            .main-class4-line1-box-image{
+                text-align: center;
+                margin-top: 30px;
+            }
+            .main-class4-line1-box-text{
+                text-align: center;
+                margin-top: 10px;
+            }
+
+        }
+    
+        @media only screen and (min-width:558px) and (max-width:992px) {
+            #head {
+                background-color: #333333;
+                width: 100%;
+                height: 70px;
+            }
+    
+            .head-wrap {
+                padding: 20px 40px;
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+            }
+    
+            .head-logo {
+                width: 100%;
+                height: 70px;
+            }
+    
+            .head-logo img {
+                padding-right: 350px;
+                float: right;
+                height: auto;
+            }
+    
+            .head-title ul {
+                width: 500px;
+                height: 49px;
+                display: flex;
+                flex-wrap: wrap;
+                display: none;
+            }
+    
+            .head-title ul li {
+                list-style: none;
+                width: 52px;
+                margin-left: 12.5px;
+                margin-right: 12.5px;
+            }
+    
+            .head-title ul li a {
+                text-decoration: none;
+                color: white;
+            }
+    
+            .main-video {
+                width: 100%;
+                height: 70%;
+            }
+    
+            video {
+                width: 100%;
+                height: 70%;
+                position: absolute;
+                object-fit: fill;
+                z-index: -9999;
+            }
+            .top1{
+                display: none;
+            }
+            .main-right-top {
+                padding-top: 40px;
+                text-align: center;
+                color: white;
+                font-size: 40px;
+            }
+    
+            .main-right-middle {
+                text-align: center;
+                color: white;
+                font-size: 20px;
+                margin-top: 20px;
+            }
+            .main-right-middle p{
+                margin-bottom: 10px;
+            }
+    
+            .main-right-bottom {
+                width: 250px;
+                height: 70px;
+                border: 1px solid rgb(54,133,190);
+                background-color:rgb(54,133,190) ;
+                border-radius: 5px;
+                text-align: center;
+                transition: all .5s;
+                margin-top: 60px;
+                margin-left: 20px;
+                margin-right: 400px;
+            }
+    
+            .main-right-bottom a {
+                color: white;
+                font-size: 20px;
+                text-decoration: none;
+                margin: 0 auto;
+                line-height: 70px;
+            }
+    
+            .main-right-bottom:hover {
+                background-color:rgb(0,100,143);
+            }
+            .text{
+                margin-top: 60px;
+                text-align: center;
+            }
+            .more{
+                margin-bottom: 20px;
+            }
+            .more-text1{
+                font-size: 45px;
+                color: #333333;          
+            }
+            .more-text2{
+                margin-top: 20px;
+                font-size: 15px;
+                color: #333333;
+            }
+            .video2{
+                margin: 0 auto;
+                padding: 0 auto;
+                height: 700px;
+                border-radius: 0px;
+                position: relative;
+                width: 990px;
+                background-image: url("image/computer.png")
+            }
+            .computer{
+                width: 100%;
+            }
+            .video2-1{
+                padding-left:120px;
+                padding-top: 30px;
+                width: 77%;
+                height: 60%;
+            }
+            .media{
+                width: 100%;
+                padding: auto 10px;
+            }
+            .video2{/*不要设背景图片*/
+                background-image: none;
+                width: 100%;
+            }
+            .video2-1{
+                display: none;
+            }
+            .main-class3-1{
+               background-color: #f9f9f9;
+            }
+            .main-class3-1-all{
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+            .main-class3-1-picture{
+                width: 100%;
+            }
+            .main-class3-1-picture img{
+                width: 100%;
+            }
+            .main-class3-1-alltext{
+                padding-left: 80px;
+                margin: 30 auto;
+                width: 60%;
+                padding-right: 80px;
+            }
+            .main-class3-1-title{
+                text-align: center;
+                width:100%;
+                font-size: 4vw;
+                font-weight: normal;
+                font-style: normal;
+                color: #333333;
+                margin-bottom: 20px;
+            }
+            .main-class3-1-text{
+                font-weight: normal;
+                font-style: normal;
+                font-size: 1.75vw;
+                width:100%;
+                color: #333333;
+                line-height: 30px;
+            }
+            .main-class4-alltext{
+                padding-top: 100px;
+                margin: 15 auto;
+                width: 100%;             
+                text-align: center;
+            }
+            .main-class4-title{
+                width:100%;
+                font-size: 4vw;
+                font-weight: normal;
+                font-style: normal;
+                color: #333333;
+                margin-bottom: 20px;
+            }
+            .main-class4-text{
+                margin-top: 30px;
+                font-size: 2vw;
+                width:100%;
+                color: #333333;
+                line-height: 30px;
+            }
+            .main-class4-line1{
+                max-width: 900px;
+                margin: 0 auto;
+            }
+            .main-class4-line1-box{
+                border: 1px solid #333333;
+                width: 90%;
+                height:160px;
+                padding-top: 15px;
+                margin-left: 30px;
+                margin-right: 15px;
+                margin-top: 7.5px;
+                margin-bottom: 7.5px;
+            }
+            .main-class4-line1-box-image{
+                text-align: center;
+                margin-top: 30px;
+            }
+            .main-class4-line1-box-text{
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+    
+         @media only screen and (min-width:992px) { 
+            #head {
+                background-color: #333333;
+                width: 100%;
+                height: 70px;
+            }
+            .head-wrap {
+                padding: 20px 40px;
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+            }
+    
+            .head-logo {
+                width: 176px;
+                height: 70px;
+            }
+    
+            .head-logo img {
+                height: auto;
+            }
+    
+            .head-title ul {
+                width: 500px;
+                height: 49px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+    
+            .head-title ul li {
+                list-style: none;
+                width: 52px;
+                margin-left: 12.5px;
+                margin-right: 12.5px;
+            }
+    
+            .head-title ul li a {
+                text-decoration: none;
+                color: white;
+            }
+    
+            .main-video {
+                width: 100%;
+                height: 100%;
+            }
+    
+            video {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                object-fit: fill;
+                z-index: -9999;
+            }
+            .right{
+                float: right;
+                margin-top: 150px;
+                padding-right: 120px;
+            }
+            .main-right-top {
+                text-align: center;
+                color: lightgray;
+                font-size: 40px;
+            }
+            .top2{
+                display: none;
+            }
+            .main-right-middle {
+                text-align: center;
+                color: lightgray;
+                font-size: 20px;
+                margin-top: 60px;
+            }
+            .main-right-middle p{
+                margin-bottom: 10px;
+            }
+    
+            .main-right-bottom {
+                width: 300px;
+                height: 70px;
+                border: 1px solid white;
+                text-align: center;
+                transition: all .5s;
+                margin-top: 60px;
+                margin-left: 30px;
+            }
+    
+            .main-right-bottom a {
+                color: white;
+                font-size: 20px;
+                text-decoration: none;
+                margin: 0 auto;
+                line-height: 70px;
+            }
+    
+            .main-right-bottom:hover {
+                background-color: white;
+            }
+    
+            .main-right-bottom:hover a {
+                color: gray;
+            }
+            .text{
+                margin-top: 60px;
+                text-align: center;
+            }
+            .more{
+                margin-bottom: 20px;
+            }
+            .more-text1{
+                font-size: 56px;
+                color: #333333;          
+            }
+            .more-text2{
+                margin-top: 20px;
+                font-size: 20px;
+                color: #333333;
+            }
+            .video2{
+                margin: 0 auto;
+                padding: 0 auto;
+                height: 700px;
+                border-radius: 0px;
+                position: relative;
+                width: 990px;
+                background-image: url("image/computer.png")
+            }
+            .media{
+                display: none;
+            }
+            .computer{
+                width: 100%;
+            }
+            .video2-1{
+                padding-left:120px;
+                padding-top: 30px;
+                width: 77%;
+                height: 60%;
+            }
+            .main-class3-1{
+               background-color: #f9f9f9;
+            }
+            .main-class3-1-all{
+                display: flex;
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+            .main-class3-1-picture{
+                padding-left: 20px;
+                width: 45%;
+            }
+            .main-class3-1-picture img{
+                width: 100%;
+            }
+            .main-class3-1-alltext{
+                padding-left: 30px;
+                margin: 30 auto;
+                width: 38%;
+                padding-right: 80px;
+            }
+            .main-class3-1-title{
+                width:100%;
+                font-size: 3vw;
+                font-weight: normal;
+                font-style: normal;
+                color: #333333;
+                margin-bottom: 20px;
+            }
+            .main-class3-1-text{
+                font-size: 1.25vw;
+                width:100%;
+                color: #333333;
+                line-height: 30px;
+            }
+            .main-class4-alltext{
+                padding-top: 100px;
+                margin: 15 auto;
+                width: 100%;             
+                text-align: center;
+            }
+            .main-class4-title{
+                width:100%;
+                font-size: 3vw;
+                font-weight: normal;
+                font-style: normal;
+                color: #333333;
+                margin-bottom: 20px;
+            }
+            .main-class4-text{
+                margin-top: 30px;
+                font-size: 1.25vw;
+                width:100%;
+                color: #333333;
+                line-height: 30px;
+            }
+            .main-class4-line1{
+                max-width: 900px;
+                margin: 0 auto;
+                display: flex;
+            }
+            .main-class4-line1-box{
+                border: 1px solid #333333;
+                width: 33.333333%;
+                height:160px;
+                padding-top: 15px;
+                margin-right: 7.5px;
+                margin-left: 7.5px;
+                margin-top: 7.5px;
+                margin-bottom: 7.5px;
+            }
+            .main-class4-line1-box-image{
+                text-align: center;
+                margin-top: 30px;
+            }
+            .main-class4-line1-box-text{
+                text-align: center;
+                margin-top: 10px;
+            }
+         } 
+         
+    </style>
+    </head>
+<body>
+    <div id="head">
+        <div class="head-wrap">
+            <div class="head-logo">
+                <img src="image/logo.png" width="102px" height="33px">
+            </div>
+            <div class="head-title">
+                <nav>
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">模板</a></li>
+                        <li><a href="#">套餐</a></li>
+                        <li><a href="#">案例</a></li>
+                        <li><a href="#">文案</a></li>
+                        <li><a href="#">推广</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-video">
+            <video autoplay muted loop>
+                <source src="video/bg.mp4">
+            </video>
+            <div class="right">
+                <div class="main-right-top top1">
+                    <p>做一个响应式网站</p>
+                    <p>让世界更好的了解您<p>
+                </div>
+                <div class="main-right-top top2">
+                    <p>自己做网站</p>
+                    <p>简单又省钱</p>
+                </div>
+                <div class="main-right-middle top1">
+                    <p>真&nbsp「响应式」&nbsp自&nbsp助&nbsp建&nbsp站&nbsp平&nbsp台</p>
+                    <p>艺&nbsp术&nbsp品&nbsp级&nbsp模&nbsp板 引&nbsp领&nbsp自&nbsp助&nbsp建&nbsp站&nbsp潮&nbsp流</p>
+                </div>
+                <div class="main-right-middle top2">
+                        <p>引领&nbsp「响应式自助建站」&nbsp潮流</p>
+                        <p>每一套模板都是艺术品</p>
+                    </div>
+                <div class="clear"></div>
+                <div class="main-right-bottom">
+                    <a href="#">免&nbsp费&nbsp创&nbsp建&nbsp用&nbsp户</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-class2">
+            <div class="more">
+                <div class="text">
+                    <p class="more-text1">更快，更简单</p>
+                    <p class="more-text2">让您事半功N倍的建站工具</p>
+                    <p class="more-text2">一次编辑，在所有设备下使用</p>
+                </div>
+            </div>
+            <div class="video2">
+                <img src="image/media.jpg" class="media">
+                <video autoplay loop muted class="video2-1">
+                    <source src="video/bg2.mp4">
+                </video>
+            </div>
+        </div>
+        <div class="main-class3">
+            <div class="main-class3-1">
+                <div class="main-class3-1-all">
+                    <div class="main-class3-1-picture">
+                        <img src="image/main-class-3.png">
+                    </div>
+                    <div class="main-class3-1-alltext">
+                        <div class="main-class3-1-title">
+                            基于H5模板，快速搭建一个响应式网站
+                        </div>
+                        <div class="main-class3-1-text">
+                            <span>起飞页™是一款简单、便捷的工具，可以帮助您制作响应式网站。
+                                我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。
+                                在这里，您仅需花上10分钟便可以完成一个H5响应式网站，您会发现完全不需要编写一行代码，
+                                这就是起飞页自助建站的神奇之处。
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-class4">
+            <div class="main-class4-alltext">
+                <div class="main-class4-title">
+                    1秒打开，快得有点儿狠
+                </div>
+                <div class="main-class4-text">
+                    <span>
+                        超高性能云服务器和云网络，CPU提速90%，内存提速50%，IO处理提速200%，网速提高100%
+                    </span>
+                </div>
+            </div>
+            <div class="mian-class4-allline">
+                <div class="main-class4-line1">
+                    <div class="main-class4-line1-box">
+                        <div class="main-class4-line1-box-image">
+                            <img src="image/main-class-4-1.png">
+                        </div>
+                        <div class="main-class4-line1-box-text">
+                            <span>CDN发布</span>
+                        </div>
+                    </div>
+                    <div class="main-class4-line1-box">
+                        <div class="main-class4-line1-box-image">
+                            <img src="image/main-class-4-2.png">
+                        </div>
+                        <div class="main-class4-line1-box-text">
+                            <span>多层缓存</span>
+                        </div>
+                    </div>
+                    <div class="main-class4-line1-box">
+                        <div class="main-class4-line1-box-image">
+                            <img src="image/main-class-4-3.png">
+                        </div>
+                        <div class="main-class4-line1-box-text">
+                            <span>页面压缩</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-class4-line1">
+                        <div class="main-class4-line1-box">
+                            <div class="main-class4-line1-box-image">
+                                <img src="image/main-class-4-4.png">
+                            </div>
+                            <div class="main-class4-line1-box-text">
+                                <span>静态文件合并</span>
+                            </div>
+                        </div>
+                        <div class="main-class4-line1-box">
+                            <div class="main-class4-line1-box-image">
+                                <img src="image/main-class-4-5.png">
+                            </div>
+                            <div class="main-class4-line1-box-text">
+                                <span>DNS&nbsp&nbsp云解析</span>
+                            </div>
+                        </div>
+                        <div class="main-class4-line1-box">
+                            <div class="main-class4-line1-box-image">
+                                <img src="image/main-class-4-6.png">
+                            </div>
+                            <div class="main-class4-line1-box-text">
+                                <span>图片无损压缩</span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    </script>
+</body>
+</html>

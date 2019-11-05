@@ -1,0 +1,737 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: "art";
+    src: url(../fonts/字魂105号-简雅黑.ttf);
+}
+li{
+    list-style: none;
+}
+
+.first-show{
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+.left{
+    width: 20%;
+    height: 70px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.left a{
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    font-family: "art";
+}
+.left img{
+    width: 25%;
+    height: 100%;
+}
+.middle{
+    width: 60%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(235, 232, 232);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+.middle a{
+    color: rgb(160, 158, 158);
+    text-decoration: none;
+    margin: auto;
+    font-family: "art";
+}
+.right{
+    width: 18%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.right a{
+    color: rgb(160, 158, 158);
+    padding: 2%;
+    font-family: "art";
+}
+.user-head{
+    width: 25%;
+    height: 50%;
+    background: #eee;
+    border-radius: 50px;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .sp{
+    border: 1px solid rgb(160, 158, 158);
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 0;
+} */
+.secend-show{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-sub p{
+    text-decoration: none;
+    color: rgb(160, 158, 158);
+    font-size: 10px;
+    margin: auto;
+    font-family: "art";
+}
+.head-in{
+    margin: 0 auto;
+    width: 95%;
+    height: 80vh;
+    background-color: #eed6c4;
+    display: flex;
+    justify-content: flex-end;
+}
+.pic{
+    width: 63.47%;
+    position: absolute;
+    height: 80vh;
+    right: 8.4%;
+}
+.pic img{
+    width: 100%;
+    height: 80vh;
+}
+.move{
+    position: relative;
+    width: 100%;
+    height: 90vh; ;
+    background: url(../images/fixed.jpg) fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.nomove{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #642c01;
+    opacity: 0.5;
+}
+
+
+.pic7{
+    transition: all 1s ease-in-out;
+    transform: translateY(200px);
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.1);
+    width: 30%;
+    height: 30vh;
+}
+.pic7.scrolled{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.pic8{
+    transition: all 1s ease-in-out;
+    transform: translateY(200px);
+    opacity: 0;
+    width: 30%;
+    height: 30vh;
+}
+.pic8.scrolled{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.pic9{
+    transition: all 1s ease-in-out;
+    transform: translateY(200px);
+    opacity: 0;
+}
+.pic9.scrolled{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.pic10{
+    transition: all 1s ease-in-out;
+    transform: translateY(200px);
+    opacity: 0;
+}
+.pic10.scrolled{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.pic11{
+    transition: all 1s ease-in-out;
+    transform: translateY(200px);
+    opacity: 0;
+}
+.pic11.scrolled{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.pic12{
+    transition: all 1s ease-in-out;
+    transform: translateY(200px);
+    opacity: 0;
+}
+.pic12.scrolled{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.pic13{
+    transition: all 1s ease-in-out;
+    transform: translateY(200px);
+    opacity: 0;
+}
+.pic13.scrolled{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.pic14{
+    transition: all 1s ease-in-out;
+    transform: translateY(200px);
+    opacity: 0;
+}
+.pic14.scrolled{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.pic15{
+    transition: all 1s ease-in-out;
+    transform: translateY(200px);
+    opacity: 0;
+}
+.pic15.scrolled{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.pic-img{
+    overflow: hidden;
+    width: 30%;
+    height: 30vh;
+    cursor: pointer;
+}
+.pic-img img{
+    transition:all .5s;
+    width: 100%;
+    height: 100%;
+}
+.pic-img img:hover{
+    transform: scale(1.1);
+}
+.pic-in-7{
+    width: 100%;
+    height: 100%;
+}
+.pic-in-8{
+    height: 100%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+}
+.activity-introduce{
+    margin: 0 5%;
+}
+.pic-in-9{
+    width: 100%;
+    height: 100%;
+}
+.number3{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+.pic10{
+    background: rgba(255, 255, 255, 0.1);
+    width: 30%;
+    height: 30vh;
+}
+.pic12{
+    background: rgba(255, 255, 255, 0.1);
+    width: 30%;
+    height: 30vh;
+}
+
+.pic-in-10{
+    width: 100%;
+    height: 100%;
+}
+.pic-in-11{
+    width: 100%;
+    height: 100%;
+}
+.pic-in-12{
+    width: 90%;
+    height: 100%;
+    margin:auto;
+}
+.number4{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+.number-all{
+    justify-content: center;
+    width: 75%;
+    bottom: 0;
+    position: absolute;
+    height: 60vh;
+}
+.pic13{
+    width: 30%;
+    height: 30vh;
+}
+.pic14{
+    width: 30%;
+    height: 30vh;
+}
+
+
+.pic15{
+    width: 30%;
+    height: 30vh;
+}
+.pic-in-13{
+    width: 100%;
+    height: 100%;
+}
+.pic-in-14{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+.pic-in-15{
+    width: 100%;
+    height: 100%;
+}
+.number5{
+    display: flex;
+    justify-content: center;
+}
+.number3-word1-1{
+    font-family: "art";
+    color: white;
+    width: 30%;
+    height: 8vh;
+    font-size: 50px;
+}
+.number3-word1-2{
+    font-family: "art";
+    color: white;
+    height: 5vh;
+    font-size: 25px;
+}
+.human-title{
+    font-family: "art";
+    color: white;
+    height: 5vh;
+    font-size: 25px;
+}
+.human-content{
+    font-family: "art";
+    color: gray;
+    height: 5vh;
+    font-size: 13px;
+}
+.festival{
+    padding-top: 8%;
+    font-family: "art";
+    color: white;
+    font-size: 3vw;
+}
+.festival-content{
+    margin-top: 8%;
+    font-family: "art";
+    color: #b2bec3;
+    font-size: 1vw;
+}
+.festival-button{
+    width: 45%;
+    margin-top: 8%;
+    font-family: "art";
+    color: white;
+    font-size: 1.2vw;
+    border: 1px solid #fa8b36;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fa8b36;
+    cursor: pointer;
+    transition: all .5s;
+}
+.festival-button:hover{
+    color: #fa8b36;
+    background-color: white;
+    border: 1px solid white;
+}
+.festival-button p{
+    transform: translateY(-2px);
+}
+
+.festival2{
+
+    color: black;
+}
+.festival-content2{
+    color: black;
+
+}
+.festival-button2{
+    border: 1px solid #fa8b36;
+
+}
+.festival-button2:hover{
+    color: white;
+    background-color: #fa8b36;
+    border: 1px solid #fa8b36;
+}
+
+.content-2{
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: 20%;
+}
+.content-title-2{
+    width: 100%;
+    height: 25vh;
+    margin-top: 5%;
+}
+.bg-2{
+    width: 30%;
+    height: 15vh;
+    margin: auto;
+    background-image: url(../images/color.png);
+    background-size: cover;
+    opacity: 0.5;
+}
+.index-2{
+    width: 100%;
+}
+.index-3{
+    margin-top: 25%;
+}
+.index2-content{
+    position: relative;
+    margin: 65px 192px;
+}
+.index2-content-title{
+    text-align: center;
+    font-size:1.5vw;
+    color: #999999;
+    font-weight: bold;
+}
+.index2-content-title-font{
+    z-index: -1;
+    width: 30%;
+    top: -5.5%;
+    left: 35%;
+    position: absolute;
+    text-align: center;
+}
+.index2-content-title-font img{
+    width: 100%;
+}
+.index2-content-title-english{
+    text-align: center;
+    margin-top: 6px;
+    font-size: 8px;
+    color: #d1a55b;
+}
+.index2-content-button{
+    margin-top: 21px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.show-btn{
+    cursor: pointer;
+    text-align: center;
+    line-height: 19px;
+    width: 60.5px;
+    height: 19px;
+    border-radius: 20px;
+    border: 1px solid #CCCCCC;
+    background: white;
+    color: #666666;
+    font-size: 8px;
+}
+.show-btn.choose{
+    background: #BE9D6D;
+    color: #fff;
+    border: 1px solid #BE9D6D;
+}
+.show-btn:nth-child(2){
+    margin-left: 5%;
+}
+.show-btn:nth-child(3){
+    margin-left: 5%;
+}
+.show-btn span{
+    padding: 3% 5%;
+}
+
+.index2-content-picture{
+    margin-top: 4%;
+    width: 100%;
+}
+.renwen{
+    display: block;
+}
+.jiyi{
+    display: none;
+}
+.yishi{
+    display: none;
+}
+.picture-line{
+    display: flex;
+    width: 100%;
+}
+.picture-line1{
+    transform: translateY(200px);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.picture-line1.scrolled{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.picture-line2{
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.picture-line2.scrolled{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.picture-line:nth-child(2){
+    margin-top: 3%;
+}
+.picture{
+    cursor: pointer;
+    width: 33.33%;
+    overflow: hidden;
+}
+.picture img{
+    transition: all .5s;
+    width: 100%;
+}
+.picture img:hover{
+    transform: scale(1.1);
+}
+.picture:first-child{
+    margin-right: 3%;
+}
+.picture:nth-child(2){
+    margin-right: 3%;
+}
+.index2-content-more{
+    margin-top: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+.more-button{
+    cursor: pointer;
+    width: 25%;
+    line-height: 24px;
+    height: 24px;
+    display: block;
+    transition: all 0.4s ease;
+    border-radius: 50px;
+    border: 1px solid #D0BCA8;
+}
+.more-button a{
+    font-size: 8px;
+    color: #8e7347;
+}
+.more-button a span i{
+    transform: scale(0.66);
+}
+.more-button a i:first-child{
+    margin-left: 3%;
+}
+.more-button:hover{
+    background: #D0BCA8;
+    color: white;
+    border: 1px solid #D0BCA8;
+}
+.more-button:hover a{
+    color: white;
+}
+.hidden-navigation{
+    transition:  1s;
+    position: fixed;
+    height: 118vh;
+    width: 21%;
+    background:rgba(0,0,0,0.3);
+    left: -21%;
+    top: -110px;
+    z-index: 1;
+}
+.hidden-left{
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    bottom: 82%;
+    right: 8px;
+    cursor: pointer;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.index-4 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+}
+.index-4-content{
+    width: 80%;
+    height: 90%;
+}
+.index-4-font{
+    width: 20%;
+    top: 1.5%;
+    left: 40%;
+}
+.all-person{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.person-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease-in-out;
+    width: 30%;
+    height: 80%;
+    overflow: hidden;
+    box-shadow: none;
+    border: 1px solid #b2bec3;
+}
+.person-box:hover{
+    box-shadow: 5px 5ps 10px;
+}
+.person-box-content{
+    width: 90%;
+    height: 90%;
+}
+.person-picture{
+    margin-top: 18%;
+    width:100%;
+    height: 32.2%;
+    display: flex;
+    justify-content: center;
+}
+.person-picture img{
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+}
+.person-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+}
+.person-title-text{
+    font-size: 2.5vw;
+    font-family: 微软雅黑;
+}
+.person-text{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: #b2bec3;
+    font-size: 1.4vw;
+}
+.person-text span{
+    width: 100%;
+    text-align: center;
+}
+.person-box:first-child{
+    margin-right: 2%;
+}
+.person-box:nth-child(2){
+    margin-right: 2%;
+}
+/* .line1 {
+    top: 23%;
+    left:30.8%;
+    position: absolute;
+    width: 55%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.line2{
+    top: 40%;
+    left: 13%;
+    position: absolute;
+    width: 55%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box1,
+.box2,
+.box3 {
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.box1 {
+    visibility: hidden;
+    transform: rotate(150deg);
+}
+
+.box2 {
+    visibility: hidden;
+    transform: rotate(-60deg);
+}
+
+.box3 {
+    visibility: visible;
+    transform: rotate(-60deg);
+}
+
+.box3 img {
+    width: 100%;
+    height: 100%;
+} */
+
+
+

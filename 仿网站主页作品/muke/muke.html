@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="css/main.css">
+<style type="text/css">
+    #jineng .jineng-piucture{
+        width: 216px;
+        height: 193px;
+        position: relative;
+    }
+    #jineng h3{
+        text-align: center;
+    }
+    #img1{
+        position: absolute;
+        top: 2200px;
+        left: 80px;;
+        border-radius: 10px;
+        z-index: 20;
+    }
+    #img2{
+        position: absolute;
+        top:2203px;
+        left: 80px;
+        opacity: 0.1;
+        border-radius: 10px;
+        z-index: 15;
+        transform: scale(0.99);
+    }
+    #img3{
+        z-index: 10;
+        position: absolute;
+        top:2990px;
+        left: 80px;
+        opacity: 0.1;
+        border-radius: 10px;
+        scale: 0.8;
+        transform: scale(0.98);
+    }
+    /* .jineng-piucture:hover #img1{
+        Top:18pt;
+        transition-duration: 1s;
+        cursor: pointer;
+} */
+    #img1:hover{
+        Top:5pt;
+        transition-duration: 1s;
+        cursor: pointer;
+    }
+    #img1:hover img2{
+        Top:5pt;
+        transition-duration: 1s;
+        cursor: pointer;
+    }
+    #img1:hover img3{
+        Top:5pt;
+        transition-duration: 1s;
+        cursor: pointer;
+    }
+</style>
+<body>
+<!-- 导航栏 -->
+<div id="header">
+    <div id="nav" style="background-color:#FFF !important">
+        <div id="logo" class="logo">
+            <img src="Images/logo.png" />
+        </div>
+        <ul class="nav-item">
+            <li><a href="#">课程</a></li>
+            <li><a href="#">实战课程</a></li>
+            <li><a href="#">就业班</a></li>
+            <li><a href="#">专栏</a></li>
+            <li><a href="#">猿问</a></li>
+            <li><a href="#">手记</a></li>
+        </ul>
+        <div id="login-area">
+            <ul class="header-unlogin">
+                <li><a href="#">邀请有奖</a></li>
+                <li><a href="#">下载APP</a></li>
+                <li class="shopping"><a href="#" class="shopping">购物车</a></li>
+                <li><a href="#">登陆</a></li>
+                <li><a href="#">注册</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- 图片导航 -->
+<div id="main">
+    <div id="left">
+        <ul class="left">
+            <li class="row" ><a href="#">前沿&nbsp/&nbsp区块链&nbsp/&nbsp人工智能</a>
+                    <ul class="hide">
+                        <div class="erji-1"> 
+                        <p style="color: red;margin-left: 30px;padding-top: 20px;width: 100px;">前沿技术</p>
+                        <li class="erji"><a href="#">微服务 </a></li>
+                        <li class="erji"><a href="#">区块链</a></li>
+                        <li class="erji"><a href="#">以太坊</a></li>
+                        <li class="erji"><a href="#">人工智能 </a></li>
+                        <li class="erji"><a href="#">机器学习</a></li>
+                        <li class="erji"><a href="#">深度学习</a></li>
+                        <li class="erji"><a href="#">计算机视觉 </a></li>
+                        <li class="erji"><a href="#">自然语言处理</a></li>
+                        <li class="erji"><a href="#">数据分析&挖掘</a></li>
+                        </div>
+                        <div class="erji-2">
+                            <div class="erji-2-picture">
+                                <a href="#">
+                                <img src="images/p5.jpg" width="60px" height="40px">
+                                <p class="erji-2-p">OpenCV+TensowFlor &nbsp入门人工智能图像..</p>
+                                <p class="erji-2-p2">￥299 &nbsp 中级</p>
+                            </a>
+                            </div>
+                            <div class="erji-2-picture2">
+                                <a href="#">
+                                <img src="images/p5.jpg" width="60px" height="40px" style="border-radius: 5px;">
+                                <p class="erji-2-p">OpenCV+TensowFlor &nbsp入门人工智能图像..</p>
+                                <p class="erji-2-p2">￥299 &nbsp 中级</p>
+                                </a>
+                            </div>
+                            <div class="erji-2-picture3">
+                                <a href="#">
+                                <img src="images/p5.jpg" width="60px" height="40px" style="border-radius: 5px;">
+                                <p class="erji-2-p">OpenCV+TensowFlor &nbsp入门人工智能图像..</p>
+                                <p class="erji-2-p2">￥299 &nbsp 中级</p>
+                                </a>
+                            </div>
+                            <div class="erji-2-picture4">
+                                <a href="#">
+                                    <img src="images/p5.jpg" width="60px" height="40px" style="border-radius: 5px;">
+                                    <p class="erji-2-p">OpenCV+TensowFlor &nbsp入门人工智能图像..</p>
+                                    <p class="erji-2-p2">￥299 &nbsp 中级</p>
+                                </a>
+                            </div>
+                        </div>
+                    </ul>
+            </li>
+            <li class="row"><a href="#">前端&nbsp/&nbsp小程序&nbsp/&nbspJS</a></li>
+            <li class="row"><a href="#">后端&nbsp/&nbspJAVA&nbsp/&nbspPython</a></li>
+            <li class="row"><a href="#">移动&nbsp/Android&nbsp/&nbsp/IOS</a></li>
+            <li class="row"><a href="#">云计算&nbsp/&nbsp大数据&nbsp/&nbsp容器</a></li>
+            <li class="row"><a href="#">运维&nbsp/&nbsp测试&nbsp/&nbsp数据库</a></li>
+        </ul>
+    </div>
+    <div id="right">
+        <img src="Images/p1.jpg" />
+    </div>
+    <div id="right-bottom">
+            <div class="gongchengshi">
+                <p class="job">Web前端工程师</p>
+                <p class="jieshao">从未接触编程也可以学好</p>
+            </div>
+            <div class="gongchengshi">
+                <p class="job">JAVA工程师</p>
+                <p class="jieshao">综合就业排名第一</p>
+            </div>
+            <div class="gongchengshi">
+                <p class="job">Python工程师</p>
+                <p class="jieshao">迅速崛起的主流编程语言</p>
+            </div>
+            <div class="gongchengshi">
+                <p class="job">Andorid工程师</p>
+                <p class="jieshao">移动设备市场份额第一</p>
+            </div>
+            <div class="gongchengshi">
+                <p class="job">PHP工程师</p>
+                <p class="jieshao">最为广泛的Web后端开发语言</p>
+            </div>
+    </div>
+    <div class="clear"></div>
+    <!-- clear:both; -->
+</div>
+
+<!-- 实战推荐 -->
+<div id="shizhantuijian">
+    <h3 class="shizhantuijian">实/战/推/荐</h3> 
+    <div class="shizhan-picture">
+    <div class="shizhan-first">
+        <div id="kecheng-picture" class="first-image">
+                <div class="leibie">Vue.js</div>
+        </div>
+        <!-- <img src="Images/p2.jpg" width="216px" height="120px" class="first-image"> -->
+        <p class="biaoti">Vue2.5开发去哪儿网App&nbsp从零基础入门到实战项目</p>
+        <p class="nandu">实战 &nbsp &nbsp &nbsp初级</p>
+    </div>
+    <div class="shizhan">
+        <div id="kecheng-picture" class="second-image">
+                <div class="leibie">Vue.js</div>
+                <div class="leibie2">中间件</div>
+        </div>
+        <p class="biaoti">Java电商秒杀系统深度优化&nbsp从容应对亿级流量挑战</p>
+        <p class="nandu">实战 &nbsp &nbsp &nbsp初级</p>
+    </div>
+    <div class="shizhan">
+            <div id="kecheng-picture" class="second-image">
+                    <div class="leibie">Vue.js</div>
+            </div>
+        <p class="biaoti">Flutter从入门到进阶&nbsp实战携程网App</p>
+        <p class="nandu">实战 &nbsp &nbsp &nbsp初级</p>
+    </div>
+    <div class="shizhan">
+            <div id="kecheng-picture" class="second-image">
+                    <div class="leibie">Vue.js</div>
+            </div>
+        <p class="biaoti">阿里新零售数据库设计与实战</p>
+        <p class="nandu">实战 &nbsp &nbsp &nbsp初级</p>
+    </div>
+    <div class="shizhan">
+            <div id="kecheng-picture" class="second-image">
+                <div class="leibie">Vue.js</div>
+            </div>
+        <p class="biaoti">全面系统python3入门+进阶课程&nbsp 零基础学python</p>
+        <p class="nandu">实战 &nbsp &nbsp &nbsp初级</p>
+    </div>
+    </div>
+</div>
+
+<div class="clear"></div>
+
+<!-- 新上好课 -->
+<div id="xinshanghaoke">
+    <div id="shizhantuijian">
+        <h3 class="shizhantuijian">新/上/好/课</h3> 
+        <div class="shizhan-picture">
+                <div class="shizhan-first">
+                    <div id="kecheng-picture" class="first-image">
+                        <div class="xinke">新课</div>
+                    </div>
+                    <!-- <img src="Images/p2.jpg" width="216px" height="120px" class="first-image"> -->
+                    <p class="biaoti">Vue2.5开发去哪儿网App&nbsp从零基础入门到实战项目</p>
+                    <p class="nandu">实战 &nbsp &nbsp &nbsp初级</p>
+                </div>
+                <div class="shizhan">
+                    <div id="kecheng-picture" class="second-image">
+                            <div class="leibie">Vue.js</div>
+                            <div class="leibie2">中间件</div>
+                    </div>
+                    <p class="biaoti">Java电商秒杀系统深度优化&nbsp从容应对亿级流量挑战</p>
+                    <p class="nandu">实战 &nbsp &nbsp &nbsp初级</p>
+                </div>
+                <div class="shizhan">
+                        <div id="kecheng-picture" class="second-image">
+                                <div class="leibie">Vue.js</div>
+                        </div>
+                    <p class="biaoti">Flutter从入门到进阶&nbsp实战携程网App</p>
+                    <p class="nandu">实战 &nbsp &nbsp &nbsp初级</p>
+                </div>
+                <div class="shizhan">
+                        <div id="kecheng-picture" class="second-image">
+                                <div class="leibie">Vue.js</div>
+                        </div>
+                    <p class="biaoti">阿里新零售数据库设计与实战</p>
+                    <p class="nandu">实战 &nbsp &nbsp &nbsp初级</p>
+                </div>
+                <div class="shizhan">
+                        <div id="kecheng-picture" class="second-image">
+                            <div class="leibie">Vue.js</div>
+                        </div>
+                    <p class="biaoti">全面系统python3入门+进阶课程&nbsp 零基础学python</p>
+                    <p class="nandu">实战 &nbsp &nbsp &nbsp初级</p>
+                </div>
+                </div>
+                <div class="shizhan-picture">
+                        <div class="shizhan-first">
+                            <div id="kecheng-picture" class="first-image">
+                                    <div class="leibie">Vue.js</div>
+                            </div>
+                            <!-- <img src="Images/p2.jpg" width="216px" height="120px" class="first-image"> -->
+                            <p class="biaoti">Vue2.5开发去哪儿网App&nbsp从零基础入门到实战项目</p>
+                            <p class="nandu">实战 &nbsp &nbsp &nbsp初级</p>
+                        </div>
+                        <div class="shizhan">
+                            <div id="kecheng-picture" class="second-image">
+                                    <div class="leibie">Vue.js</div>
+                                    <div class="leibie2">中间件</div>
+                            </div>
+                            <p class="biaoti">Java电商秒杀系统深度优化&nbsp从容应对亿级流量挑战</p>
+                            <p class="nandu">实战 &nbsp &nbsp &nbsp初级</p>
+                        </div>
+                        <div class="shizhan">
+                                <div id="kecheng-picture" class="second-image">
+                                        <div class="leibie">Vue.js</div>
+                                </div>
+                            <p class="biaoti">Flutter从入门到进阶&nbsp实战携程网App</p>
+                            <p class="nandu">实战 &nbsp &nbsp &nbsp初级</p>
+                        </div>
+                        <div class="shizhan">
+                                <div id="kecheng-picture" class="second-image">
+                                        <div class="leibie">Vue.js</div>
+                                </div>
+                            <p class="biaoti">阿里新零售数据库设计与实战</p>
+                            <p class="nandu">实战 &nbsp &nbsp &nbsp初级</p>
+                        </div>
+                        <div class="shizhan">
+                                <div id="kecheng-picture" class="second-image">
+                                    <div class="leibie">Vue.js</div>
+                                </div>
+                            <p class="biaoti">全面系统python3入门+进阶课程&nbsp 零基础学python</p>
+                            <p class="nandu">实战 &nbsp &nbsp &nbsp初级</p>
+                        </div>
+                        </div>
+    </div>
+</div>
+
+<div class="clear"></div>
+
+<!-- 新手入门 -->
+<div id="xinshourumen">
+    <div id="shizhantuijian">
+        <h3 class="shizhantuijian">新/手/入/门</h3> <div class="shizhan-picture">
+            <div id="rumen-picture1">
+                <p class="rumen-p1">站上微信小程序风口，实现职业华丽转身</p>
+                <P class="rumen-p2">入门技能+项目开发，逐步深入学习微信小程序开发</P>
+            </div>
+            <div id="rumen-picture2">
+                    <p class="rumen-p1">慕课微课</p>
+                    <P class="rumen-p2">超值课程最低1元体验</P>
+            </div>
+                <div class="shizhan-first">
+                    <div id="kecheng-picture" class="first-image">
+                        <div class="leibie">Vue.js</div>
+                    </div>
+                    <!-- <img src="Images/p2.jpg" width="216px" height="120px" class="first-image"> -->
+                    <p class="biaoti">Vue2.5开发去哪儿网App&nbsp从零基础入门到实战项目</p>
+                    <p class="nandu">实战 &nbsp &nbsp &nbsp初级</p>
+                </div>
+                <div class="shizhan">
+                    <div id="kecheng-picture" class="second-image">
+                            <div class="leibie">Vue.js</div>
+                            <div class="leibie2">中间件</div>
+                    </div>
+                    <p class="biaoti">Java电商秒杀系统深度优化&nbsp从容应对亿级流量挑战</p>
+                    <p class="nandu">实战 &nbsp &nbsp &nbsp初级</p>
+                </div>
+                <div class="shizhan">
+                        <div id="kecheng-picture" class="second-image">
+                                <div class="leibie">Vue.js</div>
+                        </div>
+                    <p class="biaoti">Flutter从入门到进阶&nbsp实战携程网App</p>
+                    <p class="nandu">实战 &nbsp &nbsp &nbsp初级</p>
+                </div>
+                <div class="shizhan">
+                        <div id="kecheng-picture" class="second-image">
+                                <div class="leibie">Vue.js</div>
+                        </div>
+                    <p class="biaoti">阿里新零售数据库设计与实战</p>
+                    <p class="nandu">实战 &nbsp &nbsp &nbsp初级</p>
+                </div>
+                <div class="shizhan">
+                        <div id="kecheng-picture" class="second-image">
+                            <div class="leibie">Vue.js</div>
+                        </div>
+                    <p class="biaoti">全面系统python3入门+进阶课程&nbsp 零基础学python</p>
+                    <p class="nandu">实战 &nbsp &nbsp &nbsp初级</p>
+                </div>
+                </div>
+                <div class="shizhan-picture">
+                        <div class="shizhan-first">
+                            <div id="kecheng-picture" class="first-image">
+                                    <div class="leibie">Vue.js</div>
+                            </div>
+                            <!-- <img src="Images/p2.jpg" width="216px" height="120px" class="first-image"> -->
+                            <p class="biaoti">Vue2.5开发去哪儿网App&nbsp从零基础入门到实战项目</p>
+                            <p class="nandu">实战 &nbsp &nbsp &nbsp初级</p>
+                        </div>
+                        <div class="shizhan">
+                            <div id="kecheng-picture" class="second-image">
+                                    <div class="leibie">Vue.js</div>
+                                    <div class="leibie2">中间件</div>
+                            </div>
+                            <p class="biaoti">Java电商秒杀系统深度优化&nbsp从容应对亿级流量挑战</p>
+                            <p class="nandu">实战 &nbsp &nbsp &nbsp初级</p>
+                        </div>
+                        <div class="shizhan">
+                                <div id="kecheng-picture" class="second-image">
+                                        <div class="leibie">Vue.js</div>
+                                </div>
+                            <p class="biaoti">Flutter从入门到进阶&nbsp实战携程网App</p>
+                            <p class="nandu">实战 &nbsp &nbsp &nbsp初级</p>
+                        </div>
+                        <div class="shizhan">
+                                <div id="kecheng-picture" class="second-image">
+                                        <div class="leibie">Vue.js</div>
+                                </div>
+                            <p class="biaoti">阿里新零售数据库设计与实战</p>
+                            <p class="nandu">实战 &nbsp &nbsp &nbsp初级</p>
+                        </div>
+                        <div class="shizhan">
+                                <div id="kecheng-picture" class="second-image">
+                                    <div class="leibie">Vue.js</div>
+                                </div>
+                            <p class="biaoti">全面系统python3入门+进阶课程&nbsp 零基础学python</p>
+                            <p class="nandu">实战 &nbsp &nbsp &nbsp初级</p>
+                        </div>
+                        </div>
+
+    </div>
+</div>
+
+<div class="clear"></div>
+
+<!-- 技能提升 -->
+<div id="jineng">
+    <h3 class="jinengtisheng">技/能/提/升</h3> 
+    <div class="jineng-picture">
+        <img src="../muke2/Images/p7.jpg" width="216px" height="120px" id="img1">
+        <img src="../muke2/Images/p7.jpg" width="216px" height="120px" id="img2">
+        <img src="../muke2/Images/p7.jpg" width="216px" height="120px" id="img3">
+    </div>
+    
+</div>         
+<script>
+    var row=document.getElementsByClassName("row");
+    var length=row.length;
+    for(var i=0;i<length;i++){
+     row[i].onmouseover=function(i){
+      var that=row[i];
+      return function(i){
+       child=that.childNodes;
+       child[2].style.display="block";
+      }
+     }(i);
+     row[i].onmouseout=function(i){
+      var that=row[i];
+      return function(i){
+       child=that.childNodes;
+       child[2].style.display="none";
+      }
+     }(i);
+    }
+    console.log(row);
+   </script>
+</body>

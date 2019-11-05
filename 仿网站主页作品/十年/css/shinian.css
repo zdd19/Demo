@@ -1,0 +1,261 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.all {
+    width: 100%;
+    height: 400vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* 切换动画时间，与后面js中的move值互相作用 */
+    transition: all 1s;
+}
+
+.first,
+.second,
+.third,
+.fourth {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.first {
+    background-image: url("../image/login_bg.jpg");
+}
+
+.second {
+    background-image: url("../image/login_timeline_bg.jpg");
+}
+
+.third {
+    background-image: url("../image/login_expore_bg.jpg");
+}
+
+.fourth {
+    background-image: url("../image/ty_login_channel.jpg");
+}
+
+.right {
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    opacity: 1;
+    right: 17px;
+    margin-top: -43.5px;
+}
+
+.right ul li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position: relative;
+}
+
+.right ul li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.right span {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 4px;
+    width: 4px;
+    border: 0;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+    transition: all .1s ease-in-out;
+}
+
+.active>span {
+    height: 12px;
+    width: 12px;
+    margin: -6px 0 0 -6px;
+    border-radius: 100%;
+}
+
+.right a:hover>span {
+    height: 12px;
+    width: 12px;
+    margin: -6px 0 0 -6px;
+    border-radius: 100%;
+}
+.index-header{
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+}
+.res{
+    display: flex;
+}
+.zhuce{
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 76px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    text-decoration: none;
+    border: 1px solid white;
+}
+.zhuce:hover{
+    background-color:rgb(0,180,255);
+    transition: all 0.5s;
+    border: 1px solid rgb(0,180,255);
+    color: white;
+    text-decoration: none;
+}
+.about-us{
+    margin-top: 5px;
+    margin-left: 20px;
+    color: white;
+}
+.share{
+    font-size: 55px;
+    color: white;
+    text-align: center;
+}
+.first-form{
+    padding-top: 100px;
+}
+.input-form{
+    text-align: center;
+}
+input{
+    margin-top: 20px;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+input[type=text]{
+    margin-top: 50px;
+    background-color: rgba(156, 156, 250,0.1);
+    text-align: center;
+    color: black;
+}
+input[type=text]::placeholder { /* WebKit browsers */
+    color: white;
+}
+input[type=password]{
+    margin-top: 20px;
+    background-color: rgba(156, 156, 250,0.1);
+    text-align: center;
+    color: black;
+}
+input[type=password]::placeholder { /* WebKit browsers */
+    color: white;
+}
+input[type=text]:focus { 
+    outline: none;
+    border-color: #2ca63b;
+    background-color: #fff;
+}
+ input[type=password]:focus { 
+    outline: none;
+    border-color: #2ca63b;
+    background-color: #fff;
+ }
+ input[type=checkbox]{
+     width: 12px;
+     height: 12px;
+     position: relative;
+     top: 2px;
+ }
+ .remFor{
+     margin-top: 20px;
+ }
+ .remember-me{
+     color: white;
+ }
+ .forget a{
+     color: white;
+ }
+button{
+    margin-top: 20px;
+    width: 300px;
+    height: 40px;
+    border-radius:20px;
+    border: 1px solid rgb(0,180,255);
+    background-color:rgb(0,180,255);
+    color: white;
+}
+.form-text{
+    margin-top: 50px;
+}
+.form-text p{
+    color: white;
+}
+.dream{
+    color: white;
+    margin-top:15%;
+    text-align: center;
+}
+.more-dream{
+    font-size: 70px;
+}
+.find-dream{
+    display: inline-flex;
+    text-align: center;
+    margin-top: 50px;
+    height: 500px;
+}
+.find{
+    width: 200px;
+    font-size: 45px;
+    color: white;
+    position: relative;
+    top: 75px;
+    left: 110px;
+}
+.dreamer{
+    width: 200px;
+    font-size: 45px;
+    color: white;
+    position: relative;
+    left: 420px;
+    top: -55px;
+}
+.wrap
+{
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-bottom:3px white solid;
+    width: 150px;
+    position: relative;
+    left: 260px;
+}
+.roll-wrap
+{
+    height:40px;
+    overflow:hidden;
+}
+.roll-wrap ul{
+    list-style: none;
+}
+.roll-wrap ul li a{
+    line-height: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+}
+.left-float{
+    float: left;
+}

@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/left-navigation.css">
+    <link rel="stylesheet" href="css/hexagons.css">
+    <style>
+        .share {
+            display: flex;
+            width: 50%;
+        }
+
+        .navigation2 {
+            height: 100%;
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navigation2 {
+            color: #b2bec3;
+            text-decoration: none;
+            font-size: 1.3vw;
+        }
+
+        .share {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-box {
+            transition: 0.4s;
+            transition-property: width;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #b2bec3;
+            width: 30px;
+            height: 30px;
+            border-radius: 40px;
+            padding: 10px;
+        }
+
+        .search-btn {
+            color: white;
+            float: right;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.4s;
+            text-decoration: none;
+            margin-left: 10%;
+        }
+
+        .search-txt {
+            border: none;
+            background: none;
+            outline: none;
+            float: left;
+            padding: 0;
+            color: white;
+            font-size: 1.1vw;
+            transition: 0.4s;
+            line-height: 40px;
+            width: 0;
+            transition: 0.4s;
+        }
+
+        .search-txt::placeholder {
+            color: white;
+        }
+
+        .search-box:hover {
+            transition: all 0.4s;
+            width: 80%;
+        }
+
+        .search-box:hover>.search-txt {
+            width: 80%;
+            padding: 0 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="hidden-logo">
+                    <img src="./images/logo.png" class="logo-head">
+                </div>
+            </div>
+            <div class="header-navigation">
+                <div class="header-navigation-line1">
+                    <ul class="navigation1">
+                        <li>首页</li>
+                        <li>四美</li>
+                        <li>活动</li>
+                        <li>论坛</li>
+                        <li>商城</li>
+                    </ul>
+                    <div class="line1-right">
+                        <div class="change-city">
+                            <span>切换城市</span>
+                        </div>
+                        <div class="shopping">
+                            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                        </div>
+                        <div class="user-head">
+                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                            <div class="level">
+                                <span>LV.11</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 主页二级导航 -->
+                <div class="header-navigation-line2">
+                    <div class="line2-content">
+                        <div class="share">
+                            <div class="search-box">
+                                <input class="search-txt" type="text" placeholder="请输入要搜索的内容" />
+                                <a class="search-btn" href="#">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                            <div class="wechat">
+                                <i class="fa fa-weixin" aria-hidden="true"></i>
+                            </div>
+                            <div class="qq">
+                                <i class="fa fa-qq" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="navigation-time">
+                            <span>农历六月廿九</span>
+                            <span>星期三</span>
+                            <span>2019-07-31</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hidden-navigation">
+        <div class="hidden-left">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <div class="left-bottom">
+            <ul id="accordion" class="accordion">
+                <li class="accordion-li">
+                    <div class="link"><i class="fa fa-home user-title"></i>
+                        <span>首页</span>
+                        <i class="fa fa-chevron-down link-more"></i></div>
+                    <ul class="submenu">
+                        <li><a href="#"><span><i class="fa fa-shopping-cart user-text"
+                                        aria-hidden="true"></i>艺式乡土</span></a></li>
+                        <li><a href="#"><span><i class="fa fa-list user-text" aria-hidden="true"></i>推荐活动</span></a>
+                        </li>
+                        <li><a href="#"><span><i class="fa fa-exchange user-text" aria-hidden="true"></i>技艺传人</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="accordion-li">
+                    <div class="link"><i class="fa fa-instagram user-title"></i>
+                        <span>四美</span>
+                        <i class="fa fa-chevron-down link-more"></i></div>
+                    <ul class="submenu">
+                        <li><a href="#"><span><i class="fa fa-money user-text" aria-hidden="true"></i>语言之美</span></a>
+                        </li>
+                        <li><a href="#"><span><i class="fa fa-money user-text" aria-hidden="true"></i>人文之美</span></a>
+                        </li>
+                        <li><a href="#"><span><i class="fa fa-money user-text" aria-hidden="true"></i>技艺之美</span></a>
+                        </li>
+                        <li><a href="#"><span><i class="fa fa-money user-text" aria-hidden="true"></i>遗失之美</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="accordion-li">
+                    <div class="link"><i class="fa fa-trophy user-title"></i>
+                        <span>活动</span>
+                        <i class="fa fa-chevron-down link-more"></i></div>
+                    <ul class="submenu">
+                        <li><a href="#"><span><i class="fa fa-money user-text" aria-hidden="true"></i>我的定制</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="accordion-li">
+                    <div class="link"><i class="fa fa-commenting-o user-title"></i>
+                        <span>论坛</span>
+                        <i class="fa fa-chevron-down link-more"></i></div>
+                    <ul class="submenu">
+                        <li><a href="#"><span><i class="fa fa-money user-text" aria-hidden="true"></i>我的定制</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="accordion-li">
+                    <div class="link"><i class="fa fa-shopping-basket user-title"></i>
+                        <span>商城</span>
+                        <i class="fa fa-chevron-down link-more"></i></div>
+                    <ul class="submenu">
+                        <li><a href="#"><span><i class="fa fa-money user-text" aria-hidden="true"></i>我的定制</span></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="head-in">
+        <div class="pic">
+            <div class="banner">
+                <div class="banner-box">
+                    <img src="./images/bg.jpg">
+                </div>
+            </div>
+        </div>
+        <section class="cd-horizontal-timeline">
+            <div class="events-content">
+                <ol>
+                    <li class="selected" data-date="16/01/2014">
+                        <div class="city-introduce">
+                            <h2>旭日格外明亮</h2>
+                            <em>亮了艺乡的一草一木</em>
+                        </div>
+                    </li>
+
+                    <li data-date="28/02/2014">
+                        <div class="city-introduce">
+                            <h2>旭日格外明亮</h2>
+                            <em>亮了艺乡的一草一木</em>
+                        </div>
+                    </li>
+
+                    <li data-date="20/04/2014">
+                        <div class="city-introduce">
+                            <h2>旭日格外明亮</h2>
+                            <em>亮了艺乡的一草一木</em>
+                        </div>
+                    </li>
+
+                    <li data-date="20/05/2014">
+                        <div class="city-introduce">
+                            <h2>旭日格外明亮</h2>
+                            <em>亮了艺乡的一草一木</em>
+                        </div>
+                    </li>
+
+                    <li data-date="09/07/2014">
+                        <div class="city-introduce">
+                            <h2>旭日格外明亮</h2>
+                            <em>亮了艺乡的一草一木</em>
+                        </div>
+                    </li>
+
+                    <li data-date="30/08/2014">
+                        <div class="city-introduce">
+                            <h2>旭日格外明亮</h2>
+                            <em>亮了艺乡的一草一木</em>
+                        </div>
+                    </li>
+
+                    <li data-date="15/09/2014">
+                        <div class="city-introduce">
+                            <h2>旭日格外明亮</h2>
+                            <em>亮了艺乡的一草一木</em>
+                        </div>
+                    </li>
+
+                    <li data-date="01/11/2014">
+                        <div class="city-introduce">
+                            <h2>旭日格外明亮</h2>
+                            <em>亮了艺乡的一草一木</em>
+                        </div>
+                    </li>
+
+                    <li data-date="10/12/2014">
+                        <div class="city-introduce">
+                            <h2>旭日格外明亮</h2>
+                            <em>亮了艺乡的一草一木</em>
+                        </div>
+                    </li>
+
+                    <li data-date="19/01/2015">
+                        <div class="city-introduce">
+                            <h2>旭日格外明亮</h2>
+                            <em>亮了艺乡的一草一木</em>
+                        </div>
+                    </li>
+
+                    <li data-date="03/03/2015">
+                        <div class="city-introduce">
+                            <h2>旭日格外明亮</h2>
+                            <em>亮了艺乡的一草一木</em>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="timeline">
+                <div class="events-wrapper">
+                    <div class="events">
+                        <ol>
+                            <li><a href="#0" data-date="16/01/2014" class="selected" style="color: white">杭州</a></li>
+                            <li><a href="#0" data-date="28/02/2014" style="color: white">温州</a></li>
+                            <li><a href="#0" data-date="20/04/2014" style="color: white">绍兴</a></li>
+                            <li><a href="#0" data-date="20/05/2014" style="color: white">宁波</a></li>
+                            <li><a href="#0" data-date="09/07/2014" style="color: white">嘉兴</a></li>
+                            <li><a href="#0" data-date="30/08/2014" style="color: white">衢州</a></li>
+                            <li><a href="#0" data-date="15/09/2014" style="color: white">金华</a></li>
+                            <li><a href="#0" data-date="01/11/2014" style="color: white">湖州</a></li>
+                            <li><a href="#0" data-date="10/12/2014" style="color: white">丽水</a></li>
+                            <li><a href="#0" data-date="19/01/2015" style="color: white">舟山</a></li>
+                            <li><a href="#0" data-date="03/03/2015" style="color: white">台州</a></li>
+                        </ol>
+
+                        <span class="filling-line" aria-hidden="true"></span>
+                    </div> <!-- .events -->
+                </div> <!-- .events-wrapper -->
+
+                <ul class="cd-timeline-navigation">
+                    <li><a href="#0" class="prev inactive">Prev
+                        </a></li>
+                    <li><a href="#0" class="next">Next</a></li>
+                </ul> <!-- .cd-timeline-navigation -->
+            </div> <!-- .timeline -->
+        </section>
+
+
+    </div>
+    <div class="index-2">
+        <div class="index2-content">
+            <div class="index2-content-title">
+                <span>艺式乡土</span>
+            </div>
+            <div class="index2-content-title-font">
+                <img src="./images/arttown.jpg">
+            </div>
+            <div class="index2-content-title-english">
+                <span>Art Town</span>
+            </div>
+            <div class="index2-content-button">
+                <div class="show-btn show-btn1">
+                    <span>人文</span>
+                </div>
+                <div class="show-btn show-btn2">
+                    <span>技艺</span>
+                </div>
+                <div class="show-btn show-btn3">
+                    <span>遗失</span>
+                </div>
+            </div>
+            <div class="index2-content-picture renwen">
+                <div class="picture-line picture-line1">
+                    <div class="picture">
+                        <img src="./images/pic5.jpg">
+                    </div>
+                    <div class="picture">
+                        <img src="./images/pic2.jpg">
+                    </div>
+                    <div class="picture">
+                        <img src="./images/pic3.jpg">
+                    </div>
+                </div>
+                <div class="picture-line picture-line2">
+                    <div class="picture">
+                        <img src="./images/pic2.jpg">
+                    </div>
+                    <div class="picture">
+                        <img src="./images/pic5.jpg">
+                    </div>
+                    <div class="picture">
+                        <img src="./images/pic6.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="index2-content-picture jiyi">
+                <div class="picture-line picture-line1">
+                    <div class="picture">
+                        <img src="./images/pic2.jpg">
+                    </div>
+                    <div class="picture">
+                        <img src="./images/pic2.jpg">
+                    </div>
+                    <div class="picture">
+                        <img src="./images/pic6.jpg">
+                    </div>
+                </div>
+                <div class="picture-line picture-line2">
+                    <div class="picture">
+                        <img src="./images/pic5.jpg">
+                    </div>
+                    <div class="picture">
+                        <img src="./images/pic2.jpg">
+                    </div>
+                    <div class="picture">
+                        <img src="./images/pic5.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="index2-content-picture yishi">
+                <div class="picture-line picture-line1">
+                    <div class="picture">
+                        <img src="./images/pic2.jpg">
+                    </div>
+                    <div class="picture">
+                        <img src="./images/pic2.jpg">
+                    </div>
+                    <div class="picture">
+                        <img src="./images/pic5.jpg">
+                    </div>
+                </div>
+                <div class="picture-line picture-line2">
+                    <div class="picture">
+                        <img src="./images/pic6.jpg">
+                    </div>
+                    <div class="picture">
+                        <img src="./images/pic2.jpg">
+                    </div>
+                    <div class="picture">
+                        <img src="./images/pic5.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="index2-content-more">
+                <div class="more-button">
+                    <a href="#">
+                        <span>MORE<i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="move">
+        <div class="nomove">
+        </div>
+        <div class="number-all">
+            <div class="number3">
+                <div class="pic7">
+                    <div class="pic-in-7">
+                        <p class="number3-word1-1">ACTIVITY</p>
+                        <p class="number3-word1-2">主题活动</p>
+                    </div>
+                </div>
+                <div class="pic8">
+                    <div class="pic-in-8">
+                        <div class="activity-introduce">
+                            <div class="festival">
+                                <p>节日庆典</p>
+                            </div>
+                            <div class="festival-content">
+                                <p>客户对于市场需求变得越来越复杂北京结合数字技术的
+                                    发展与市场的综合特性，通过与集团相关...
+                                </p>
+                            </div>
+                            <div class="festival-button">
+                                <p>点击开启 >></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pic9 pic-img">
+                    <div class="pic-in-9">
+                        <img src="./images/pic3.jpg" alt="" class="food-9">
+                    </div>
+                </div>
+            </div>
+            <div class="number4">
+                <div class="pic10">
+                    <div class="pic-in-10">
+                        <div class="human-title">
+                            <p>人文特色</p>
+                        </div>
+                        <div class="human-content">
+                            <p>在内容设计上，充分考虑“文化”要素，体现乡土自然景观的同时，
+                                也要表现出乡土的文化内涵。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pic11 pic-img">
+                    <div class="pic-in-11">
+                        <img src="./images/pic3.jpg" alt="" class="food-12">
+                    </div>
+                </div>
+                <div class="pic12">
+                    <div class="pic-in-7">
+                        <div class="activity-introduce">
+                            <div class="festival">
+                                <p>娱乐设施</p>
+                            </div>
+                            <div class="festival-content">
+                                <p>艺式文化的交流娱乐的实验 华谊兄弟旗下百余经典华谊李体现电影文化体验，
+                                    电影文化算得上是比较新奇的体验方式。
+                                </p>
+                            </div>
+                            <div class="festival-button">
+                                <p>产品介绍 >></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="number5">
+                <div class="pic13 pic-img">
+                    <div class="pic-in-13">
+                        <img src="./images/pic3.jpg" alt="" class="food-12">
+
+                    </div>
+                </div>
+                <div class="pic14">
+                    <div class="pic-in-14">
+                        <div class="activity-introduce">
+                            <div class="festival festival2">
+                                <p>定制婚礼</p>
+                            </div>
+                            <div class="festival-content festival-content2">
+                                <p>艺式文化的交流娱乐的实验 华谊兄弟旗下百余经典华，在
+                                    充满乡土气息的地方。
+                                </p>
+                            </div>
+                            <div class="festival-button2 festival-button ">
+                                <p>产品介绍 >></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pic15 pic-img">
+                    <div class="pic-in-15">
+                        <img src="./images/pic3.jpg" alt="" class="food-15">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 采取index-2的样式，总的模块名为index-3 -->
+    <div class="index-2 index-3">
+        <div class="index2-content">
+            <div class="index2-content-title">
+                <span>艺式乡土</span>
+            </div>
+            <div class="index2-content-title-font">
+                <img src="./images/arttown.jpg">
+            </div>
+            <div class="index2-content-title-english">
+                <span>Art Town</span>
+            </div>
+            <div class="index2-content-button">
+                <div class="show-btn">
+                    <span>人文</span>
+                </div>
+                <div class="show-btn">
+                    <span>技艺</span>
+                </div>
+                <div class="show-btn">
+                    <span>遗失</span>
+                </div>
+            </div>
+            <div class="index2-content-picture">
+                <div class="picture-line">
+                    <div class="picture">
+                        <img src="./images/pic5.jpg">
+                    </div>
+                    <div class="picture">
+                        <img src="./images/pic2.jpg">
+                    </div>
+                    <div class="picture">
+                        <img src="./images/pic3.jpg">
+                    </div>
+                </div>
+                <div class="picture-line">
+                    <div class="picture">
+                        <img src="./images/pic2.jpg">
+                    </div>
+                    <div class="picture">
+                        <img src="./images/pic5.jpg">
+                    </div>
+                    <div class="picture">
+                        <img src="./images/pic6.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="index2-content-more">
+                <div class="more-button">
+                    <a href="#">
+                        <span>MORE<i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="index-4">
+        <!-- <div class="line1">
+                        <div class="Hexagon">
+                            <div class="box1">
+                                <div class="box2">
+                                    <div class="box3">
+                                        <img src="./images/pic1.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Hexagon">
+                            <div class="box1">
+                                <div class="box2">
+                                    <div class="box3">
+                                        <img src="./images/pic1.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line2">
+                        <div class="Hexagon">
+                            <div class="box1">
+                                <div class="box2">
+                                    <div class="box3">
+                                        <img src="./images/pic1.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Hexagon">
+                            <div class="box1">
+                                <div class="box2">
+                                    <div class="box3">
+                                        <img src="./images/pic1.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+        <div class="index-4-content">
+            <div class="index2-content-title">
+                <span>技艺传人</span>
+            </div>
+            <div class="index2-content-title-font index-4-font">
+                <img src="./images/arttown.jpg">
+            </div>
+            <div class="index2-content-title-english">
+                <span>Art Town</span>
+            </div>
+            <div class="all-person">
+                <div class="person-box">
+                    <div class="person-box-content">
+                        <div class="person-picture">
+                            <img src="images/pic1.jpg">
+                        </div>
+                        <div class="person-title">
+                            <span class="person-title-text">传人名字</span>
+                        </div>
+                        <div class="person-text">
+                            <span>某某传人</span>
+                            <span>某某事件</span>
+                            <span>从事行业</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="person-box">
+                    <div class="person-box-content">
+                        <div class="person-picture">
+                            <img src="images/pic1.jpg">
+                        </div>
+                        <div class="person-title">
+                            <span class="person-title-text">传人名字</span>
+                        </div>
+                        <div class="person-text">
+                            <span>某某传人</span>
+                            <span>某某事件</span>
+                            <span>从事行业</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="person-box">
+                    <div class="person-box-content">
+                        <div class="person-picture">
+                            <img src="images/pic1.jpg">
+                        </div>
+                        <div class="person-title">
+                            <span class="person-title-text">传人名字</span>
+                        </div>
+                        <div class="person-text">
+                            <span>某某传人</span>
+                            <span>某某事件</span>
+                            <span>从事行业</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="go-top">Top</div>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="./js/cjs.js"></script>
+
+    <!-- logo动画 -->
+    <script>
+        $(document).ready(function () {
+            var windowHeight = $(window).height;
+            $(window).scroll(function () {
+                var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                //滚动高度大于110时
+                if (scrollTop > 110) {
+                    $(".hidden-logo").css("position", "fixed");
+                    $(".hidden-logo").addClass("rotate");
+                    //logo点击事件               
+                    $(".hidden-logo").click(function () {
+                        setTimeout(function () {
+                            $(".logo-head").attr("src", "./images/pic3.jpg");
+                        }, 1300);
+                        $(".hidden-logo").removeClass("del-user-header");
+                        $(".hidden-navigation").css("left", "0");
+                        $(".hidden-logo").addClass("user-header");
+
+                    })
+                    //关闭二级导航事件
+                    $(".hidden-left").click(function () {
+                        $(".logo-head").attr("src", "./images/logo.png");
+                        $(".hidden-logo").removeClass("user-header");
+                        $(".hidden-logo").addClass("del-user-header");
+                        $(".hidden-navigation").css("left", "-21%");
+                    })
+                }
+                //滚动高度小于50时
+                if (scrollTop < 50) {
+                    $(".logo-head").attr("src", "./images/logo.png");
+                    $(".hidden-logo").off("click");//让点击事件失效
+                    $(".hidden-logo").removeClass("user-header");
+                    $(".hidden-logo").removeClass("del-user-header");
+                    $(".hidden-navigation").css("left", "-21%");
+                    if ($(".hidden-logo").hasClass("rotate") == true) {
+                        $(".hidden-logo").addClass("del-rotate");
+                        $(".hidden-logo").removeClass("rotate");
+                    }
+                    if ($(".hidden-logo").hasClass("del-rotate") == true) {
+                        setTimeout(function () {
+                            $(".hidden-logo").removeClass("del-rotate");
+                            $(".hidden-logo").css("position", "static");
+                        }, 1000)
+                    }
+                }
+            })
+        })
+    </script>
+
+    <!-- 手风琴 -->
+    <script>
+        $(function () {
+            var Accordion = function (el, multiple) {
+                this.el = el || {};
+                this.multiple = multiple || false;
+
+                // Variables privadas
+                var links = this.el.find('.link');
+                // Evento
+                links.on('click', { el: this.el, multiple: this.multiple }, this.dropdown)
+            }
+
+            Accordion.prototype.dropdown = function (e) {
+                var $el = e.data.el;
+                $this = $(this),
+                    $next = $this.next();
+
+                $next.slideToggle();
+                $this.parent().toggleClass('open');
+
+                if (!e.data.multiple) {
+                    $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+                };
+            }
+
+            var accordion = new Accordion($('#accordion'), false);
+        });
+    </script>
+
+    <!-- 回到顶部按钮 -->
+    <script type="text/javascript">
+        var nav = document.getElementById("go-top");
+        console.log(nav);
+        window.onscroll = function () {
+            //var scrollTop = document.body.scrollTop;
+            var scrollTop = document.documentElement.scrollTop;
+            console.log(scrollTop);
+            if (scrollTop > 200) {
+                nav.className = "show";
+            } else {
+                nav.className = "";
+            }
+        }
+        nav.onclick = function () {
+            //document.body.scrollTop = 0;
+            $('body,html').animate({
+                scrollTop: 0
+            }, 1000);
+        }
+    </script>
+
+    <!-- 延时动画 -->
+    <script>
+        $(document).ready(function () {
+            var windowHeight = $(window).height;
+            var index2 = $(".index-2").offset().top;
+            var number_all = $(".number-all").offset().top;
+            var buffer = 400;
+            $(window).scroll(function () {
+                //获取高度
+                var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                if (scrollTop > index2 - buffer) {
+                    $('.picture-line1').addClass('scrolled');
+                    setTimeout(function () {
+                        $('.picture-line2').addClass('scrolled');
+                    }, 500)
+                }
+                if (scrollTop > number_all - buffer) {
+                    $('.pic7').addClass('scrolled');
+                    $('.pic10').addClass('scrolled');
+                    $('.pic13').addClass('scrolled');
+                    setTimeout(function () {
+                        $('.pic8').addClass('scrolled');
+                        $('.pic11').addClass('scrolled');
+                        $('.pic14').addClass('scrolled');
+                    }, 500)
+                    setTimeout(function () {
+                        $('.pic9').addClass('scrolled');
+                        $('.pic12').addClass('scrolled');
+                        $('.pic15').addClass('scrolled');
+                    }, 1000)
+                }
+            })
+        })
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $(".show-btn1").addClass("choose");
+            $(".show-btn1").mouseover(function () { 
+                $(".show-btn1").addClass("choose");
+                $(".show-btn2").removeClass("choose");
+                $(".show-btn3").remove("choose");
+                $(".jiyi").css("display","none");
+                $(".renwen").css("display","block");
+                $(".yishi").css("display","none");
+            });
+            $(".show-btn2").mouseover(function () { 
+                $(".show-btn1").removeClass("choose");
+                $(".show-btn2").addClass("choose");
+                $(".show-btn3").removeClass("choose");
+                $(".jiyi").css("display","block");
+                $(".renwen").css("display","none");
+                $(".yishi").css("display","none");
+            });
+            $(".show-btn3").mouseover(function () { 
+                $(".show-btn1").removeClass("choose");
+                $(".show-btn2").removeClass("choose");
+                $(".show-btn3").addClass("choose");
+                $(".jiyi").css("display","none");
+                $(".renwen").css("display","none");
+                $(".yishi").css("display","block");
+            });
+        })
+    </script>
+</body>
+
+</html>

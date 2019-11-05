@@ -1,0 +1,294 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>十年后</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/shinian.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <style type="text/css">
+        .leibie {
+            position: relative;
+            top:150px;
+        }
+        .box-father{
+            overflow: hidden;
+            height: 130px;
+            transition: all .5s ease-in-out;
+        }
+        .box-father:hover a{
+            transition: all .5s ease-in-out;
+            top:-30px;
+        }
+        .box-father:hover .dongtai {
+            transition: all .5s ease-in-out;
+            top: -80px;
+        }
+        .box{
+            transition: all .5s ease-in-out;
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 130px;
+            display: flex;
+            margin: 10px;
+        }
+        .box a{
+            transition: all .5s ease-in-out;
+            text-decoration: none;
+            color: white;
+            font-size: 26px;
+            margin: auto;
+            position: relative;
+            /* top: -30px; */
+            top:0;
+        }
+        .dongtai{
+            transition: all .5s ease-in-out;
+            color: white;
+            font-size: 12px;
+            text-align: center;
+            position: relative;
+            /* top:-65px; */
+            top:0;
+        }
+        .number{
+            font-size: 16px;            
+        }
+        .yangshi{
+            border-right: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div  class="first">
+            <div class="row col-md-12 index-header">
+                <div class="col-md-1 logo">
+                    <img src="image/logo_login.png" width="134px" height="36px">
+                </div>
+                <div class="col-md-11 col-md-push-9 res">
+                    <a href="#" class="zhuce">注册</a>
+                    <a href="#"class="about-us">关于我们</a>
+                </div>
+            </div>
+            <div class="row first-form">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="col-md-12 share">
+                        <p class="share-text">向世界分享你的追梦历程</p>
+                    </div>
+                    <div class="colo-md-12 input-form"> 
+                        <div class="row">
+                            <input type="text" placeholder="邮箱或手机号">
+                        </div>
+                        <div class="row">
+                            <input type="password" placeholder="密码">
+                        </div>
+                        <div class="row remFor">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-2" class="remember">
+                                <label class="remember-me">
+                                    <input type="checkbox" checked=checked>
+                                    记住我
+                                </label>
+                            </div>
+                            <div class="col-md-2"></div>
+                            <div class="col-md-6 forget">
+                                <a href="#">忘记密码?</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button>登陆</button>
+                        </div>
+                        <div class="row form-text">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-8">
+                                <p class="form-text1">「十年后」是一个基于梦想的经验交流社区。</p>
+                                <p class="form-text1">在这里，你可以自由的分享关于未来梦想的真实想法，</p>
+                                <p class="form-text1">并探索更多有趣的梦想，结交志同道合的人。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div  class="second"></div>
+        <div class="third">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 dream">
+                        <h2 class="more-dream"><b>探索更多有趣的梦想</b></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 ">
+                        <div class="col-md-12 find-dreamer">
+                            <div class="find">发现在</div>
+                            <div class="wrap">
+                                <div class="roll-wrap" id="roll-wrap">
+                                    <ul>
+                                        <li><a href="#">生活</a></li>
+                                        <li><a href="#">学习</a></li>
+                                        <li><a href="#">健康</a></li>
+                                        <li><a href="#">工作</a></li>
+                                        <li><a href="#">创新</a></li>
+                                        <li><a href="#">情感</a></li>
+                                        <li><a href="#">旅行</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dreamer">的梦想家</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fourth">
+            <div class="row line-text-1">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 leibie">
+                    <div class="col-md-3 box-father">
+                        <div class="col-md-11 box">
+                            <a href="#" class="leibie-text">生活</a>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="col-md-6 dongtai yangshi">
+                                <p class="number"><b>14725</b></p>
+                                <p>梦想</p>
+                            </div>
+                            <div class="col-md-6 dongtai">
+                                <p class="number"><b>23773</b></p>
+                                <p>动态</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 box-father">
+                        <div class="col-md-11 box">
+                            <a href="#">学习</a>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="col-md-6 dongtai yangshi">
+                                <p class="number"><b>14725</b></p>
+                                <p>梦想</p>
+                            </div>
+                            <div class="col-md-6 dongtai">
+                                <p class="number"><b>23773</b></p>
+                                <p>动态</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 box-father">
+                        <div class="col-md-11 box">
+                            <a href="#">工作</a>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="col-md-6 dongtai yangshi">
+                                <p class="number"><b>14725</b></p>
+                                <p>梦想</p>
+                            </div>
+                            <div class="col-md-6 dongtai">
+                                <p class="number"><b>23773</b></p>
+                                <p>动态</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 box-father">
+                        <div class="col-md-11 box">
+                            <a href="#">创新</a>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="col-md-6 dongtai yangshi">
+                                <p class="number"><b>14725</b></p>
+                                <p>梦想</p>
+                            </div>
+                            <div class="col-md-6 dongtai">
+                                <p class="number"><b>23773</b></p>
+                                <p>动态</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row line-text-1">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 leibie">
+                    <div class="col-md-3 box-father">
+                        <div class="col-md-11 box">
+                            <a href="#">健康</a>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="col-md-6 dongtai yangshi">
+                                <p class="number"><b>14725</b></p>
+                                <p>梦想</p>
+                            </div>
+                            <div class="col-md-6 dongtai">
+                                <p class="number"><b>23773</b></p>
+                                <p>动态</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 box-father">
+                        <div class="col-md-11 box">
+                            <a href="#">旅行</a>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="col-md-6 dongtai yangshi">
+                                <p class="number"><b>14725</b></p>
+                                <p>梦想</p>
+                            </div>
+                            <div class="col-md-6 dongtai">
+                                <p class="number"><b>23773</b></p>
+                                <p>动态</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 box-father">
+                        <div class="col-md-11 box">
+                            <a href="#">文艺</a>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="col-md-6 dongtai yangshi">
+                                <p class="number"><b>14725</b></p>
+                                <p>梦想</p>
+                            </div>
+                            <div class="col-md-6 dongtai">
+                                <p class="number"><b>23773</b></p>
+                                <p>动态</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 box-father">
+                        <div class="col-md-11 box">
+                            <a href="#">情感</a>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="col-md-6 dongtai yangshi">
+                                <p class="number"><b>14725</b></p>
+                                <p>梦想</p>
+                            </div>
+                            <div class="col-md-6 dongtai">
+                                <p class="number"><b>23773</b></p>
+                                <p>动态</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    <div class="right">
+        <ul>
+            <li><a href="#" class="active"><span></span></a></li>
+            <li><a href="#"><span></span></a></li>
+            <li><a href="#"><span></span></a></li>
+            <li><a href="#"><span></span></a></li>
+        </ul>
+    </div>
+    <script src="js/qiehuan.js"></script>
+    <script src="js/third.js"></script>
+</body>
+</html>

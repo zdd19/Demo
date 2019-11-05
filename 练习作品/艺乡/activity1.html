@@ -1,0 +1,184 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/activity.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="hidden-box"></div>
+        <!-- 左侧固定导航栏，占宽4.8% -->
+        <div class="all-navigation">
+            <div class="navigation">
+                <div class="logo">
+                    <!-- <img src="./image/logo-test.png"> -->
+                </div>
+                <div class="show-menu">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                <div class="user">
+                    <div class="user-head">
+                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="shopping-cart">
+                        <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second-navigation">
+            <div class="hidden-left">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div class="second-navigation-content">
+                <ul class="second-navigation-important">
+                    <li>首页</li>
+                    <li>四美</li>
+                    <li>活动</li>
+                    <li>论坛</li>
+                    <li>商城</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="activity-content">
+        <div class="activity-content-top">
+            <div class="activity-top-content">
+                <div class="activity-img">
+                    <img src="./image/activity1.jpg">
+                </div>
+                <div class="activity-introduce">
+                    <div class="activity-introduce-title">
+                        <span>创意不留白 - 站酷平台玩具涂装征集</span>
+                    </div>
+                    <div class="activity-introduce-lie">
+                        <div class="lie-line">
+                            <span class="lie-line-left">活动时间：</span>
+                            <span class="lie-line-right">2019-08-05 </span>
+                        </div>
+                        <div class="lie-line">
+                            <span class="lie-line-left">活动类型：</span>
+                            <span class="lie-line-right line-second-color">命题创作</span>
+                        </div>
+                        <div class="lie-line">
+                            <span class="lie-line-left">活动策划：</span>
+                            <span class="lie-line-right line-second-color">站酷小Z</span>
+                        </div>
+                    </div>
+                    <div class="activity-introduce-text">
+                        <span>点线面构成创意的轮廓，丰富的色彩为创意锦上添花，
+                            这一切的基础都是空白，有了空白一切都有了无限可能。
+                            在站酷13岁生日之际，站酷小Z化身无限可能的原点——【白】，
+                            邀请最富创意的你们，在站酷小Z身上绘出专属于你的无限可能。
+                            创意不留白！只要你的创意足够优秀，足够新颖，就有机会免费获得
+                            【ZCOOL TOYS】一个，如果你收到后把你的创意绘成实物并邮寄回给我们，
+                            你的创意就有可能被带到各大活动中进行署名展览。百变的站酷小Z将在你
+                            的笔下诞生，快来开始创造吧!</span>
+                    </div>
+                    <div class="activity-introduce-boottom">
+                        <div class="activity-introduce-btn">
+                            <div class="up-btn">
+                                <span>上传活动作品</span>
+                            </div>
+                            <div class="recommend-btn">
+                                <span>推荐</span>
+                            </div>
+                        </div>
+                        <!-- 互动 -->
+                        <div class="activity-introduce-interaction">
+                            <div class="activity-number">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <span>370</span>
+                            </div>
+                            <div class="activity-number">
+                                <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                <span>20</span>
+                            </div>
+                            <div class="activity-number">
+                                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                <span>102</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+
+    <!-- 切换二级菜单 -->
+    <script>
+        $(document).ready(function () {
+            $(".show-menu").click(function () {
+                $(".second-navigation").css("left", "4.8%");
+            })
+            $(".hidden-left").click(function () {
+                $(".second-navigation").css("left", "-32%");
+            })
+        })
+    </script>
+
+    <!-- 左侧模块切换 -->
+    <script>
+        $(document).ready(function () {
+            $(".show-menu").after('<div class="number-block"></div>');
+            // 7为页面模块的数量
+            for (var i = 0; i < 7; i++) {
+                $('.number-block').prepend('<div class="number"><div class="number-content"></div></div>');
+            }
+            $('.number-content:eq(0)').addClass("choose");
+            // var buffer = 300;//缓冲数值
+            // var block1 = $('.block1').offset().top;
+            // var block2 = $('.block2').offset().top;
+            // var block3 = $('.block3').offset().top;
+            // var block4 = $('.block4').offset().top;
+            // var block5 = $('.block5').offset().top;
+            // var block6 = $('.block6').offset().top;
+            // var block7 = $('.block7').offset().top;
+            // console.log(block2);
+            // console.log(block3);
+            // console.log(block3 - buffer);
+            // $(window).scroll(function () {
+            //     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            //     console.log(scrollTop);
+                //到达模块时，左侧对应进度改变
+                // if (scrollTop < block2 - buffer) {
+                //     $(".number-content:eq(1)").removeClass("choose");
+                // }
+                // if (scrollTop > block2 - buffer && scrollTop < block7 - buffer) {
+                //     $(".number-content:eq(1)").addClass("choose");
+                //     $(".number-content:eq(2)").removeClass("choose");
+                // }
+                // if (scrollTop > block3 - buffer && scrollTop < block7 - buffer) {
+                //     $(".number-content:eq(2)").addClass("choose");
+                //     $(".number-content:eq(3)").removeClass("choose");
+                // }
+                // if (scrollTop > block4 - buffer && scrollTop < block7 - buffer) {
+                //     $(".number-content:eq(3)").addClass("choose");
+                //     $(".number-content:eq(4)").removeClass("choose");
+                // }
+                // if (scrollTop > block5 - buffer && scrollTop < block7 - buffer) {
+                //     $(".number-content:eq(4)").addClass("choose");
+                //     $(".number-content:eq(5)").removeClass("choose");
+                // }
+                // if (scrollTop > block6 - buffer && scrollTop < block7 - buffer) {
+                //     $(".number-content:eq(5)").addClass("choose");
+                //     $(".number-content:eq(6)").removeClass("choose");
+                // }
+                // if (scrollTop > block7 - buffer) {
+                //     $(".number-content:eq(6)").addClass("choose");
+                // }
+            //})
+        })
+    </script>
+</body>
+
+</html>

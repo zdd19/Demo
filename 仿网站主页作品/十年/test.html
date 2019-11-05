@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .work{
+            width: 100%;
+            height: 40px;
+            overflow: hidden;
+        }
+        .all ul{
+            list-style: none;
+        }
+        .all ul li{
+            margin-top: 20px;
+            width: 100%;
+            height: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="all">
+        <div class="work">
+            <ul>
+                <li class="work-class">生活</li>
+                <li class="work-class">学习</li>
+                <li class="work-class">工作</li>
+                <li class="work-class">创新</li>
+                <li class="work-class">健康</li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var index = 0;//设置索引
+            var speed = 1000;//文字的切换速度
+            var curindex = 2000;//文字的停留时间
+            var height = $('.work-class').height();//获取单个类别的高度
+            var totalindex = $('.work> ul > li').length;//获取总的类别数量
+            var timer;//设置计时器
+            var firstchild = $('.work>ul>li').eq(0).clone;//将第一个类别复制一份
+            $('.work>ul').append(firstchild);//将复制出的类别 添加到列表最后
+            firstChild.css("height", totalIndex * height + "px"); //将复制的第一张图片显示在序列最下面
+            window.onload = function () {
+                setInterval(function () {
+                    index++;
+                    if (index > workArr.length - 1) {
+                        index = 0;
+                    }
+                    console.log(index);
+                    var x = document.getElementById('work');
+                    $('.work').animate({ top: -index * height + "px" }, 1000);
+                }, 2000)
+            }
+        });            
+    </script>
+</body>
+</html>
